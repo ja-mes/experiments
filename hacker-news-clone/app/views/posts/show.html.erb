@@ -1,0 +1,18 @@
+<h1 class="page-header"><%= @post.title %></h1>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <%= @post.description %>
+  </div>
+</div>
+
+<%= render 'settings', post: @post, useAjax: false %>
+
+<hr>
+
+<div id="comments">
+  <%= render @post.comments %>
+</div>
+
+<% @comment = @post.comments.build %>
+<%= render 'comments/form' %>

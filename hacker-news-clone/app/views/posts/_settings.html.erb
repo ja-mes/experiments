@@ -1,0 +1,8 @@
+<% if user_signed_in? && post.user == current_user %>
+  <div class="settings" style="display:inline; margin-right: 10px">
+      <%= link_to "Edit", edit_post_path(post), class: "btn btn-success btn-xs" %>
+      <%= link_to "Delete", post_path(post), remote: useAjax, method: :delete, class: "btn btn-danger btn-xs" %>
+  </div>
+<% end %>
+
+Created by <%= post.user.email %> <%= time_ago_in_words(post.created_at) %> ago

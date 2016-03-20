@@ -1,0 +1,9 @@
+<div class="well" id="<%= comment.id %>">
+  <h5><%= comment.user.email %></h5>
+  <p><%= comment.text %></p>
+
+  <% if user_signed_in? && comment.user == current_user %>
+    <%= link_to "Edit", edit_post_comment_path(comment.post, comment) %> |
+    <%= link_to "Delete", [comment.post, comment], remote: true, method: :delete %>
+  <% end %>
+</div>
