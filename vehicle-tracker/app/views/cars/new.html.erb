@@ -1,0 +1,34 @@
+<%= render 'header' %>
+
+<%= form_for @car do |f| %>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label :year %>
+        <%= f.text_field :year, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :make %>
+        <%= f.text_field :make, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :model %>
+        <%= f.text_field :model, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label :color %>
+        <%= f.text_field :make, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :total_cost %>
+        <%= f.text_field :total_cost, class: 'form-control' %>
+      </div>
+    </div>
+  </div>
+<% end %>

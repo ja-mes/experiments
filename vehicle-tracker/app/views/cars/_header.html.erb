@@ -1,0 +1,10 @@
+<h1 class="page-header">Vehicles</h1>
+
+<ul class="nav nav-tabs" style="margin-bottom: 25px">
+  <li class="<%= isActive 'cars', 'index' %>">
+    <%= link_to "All Vehicles", cars_path %>
+  </li>
+  <li class="<%= isActive 'cars', 'new' %>">
+    <%= link_to "Add Vehicle", new_car_path %>
+  </li>
+</ul>
