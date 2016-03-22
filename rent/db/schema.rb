@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160321014512) do
+ActiveRecord::Schema.define(version: 20160322003932) do
+
+  create_table "properties", force: :cascade do |t|
+    t.string "address"
+    t.string "state"
+    t.string "city"
+    t.string "zip"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
