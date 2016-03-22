@@ -1,0 +1,11 @@
+<h3 class="page-header" style="border-bottom: 0; margin-bottom: 5px">
+  <%= @property.address %>
+</h3>
+<p>Boaz, AL 35956</p>
+<hr>
+
+<ul class="nav nav-tabs">
+  <li class="<%= isActive 'properties', 'show' %>">
+    <%= link_to 'Details', @property %>
+  </li>
+</ul>
