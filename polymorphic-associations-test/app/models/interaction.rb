@@ -1,3 +1,3 @@
 class Interaction < ApplicationRecord
-  has_many :interactions, as: :interactive
+  belongs_to :interactive, polymorphic: true
 end
