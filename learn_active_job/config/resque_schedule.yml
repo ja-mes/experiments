@@ -1,0 +1,4 @@
+test_job:
+  every: 1m
+  class: TestJob
+  queue: file_serve

@@ -1,7 +1,7 @@
-class TestJob < ApplicationJob
-  queue_as :default
+class TestJob
+  @queue = :file_serve
 
-  def perform(*args)
+  def self.perform
     Person.create(name: Faker::Name.name)
   end
 end
