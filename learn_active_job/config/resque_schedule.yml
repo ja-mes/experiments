@@ -1,4 +1,4 @@
 test_job:
-  cron: "0 0 * * *"
+  every: 3s 
   class: TestJob
   queue: file_serve
