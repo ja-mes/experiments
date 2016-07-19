@@ -1,0 +1,24 @@
+<template name="quickForm_default">
+    {{#autoForm qfAutoFormContext}}
+
+        {{#with grouplessFields}}
+            {{> afQuickFields quickFieldsAtts}}
+        {{/with}}
+
+        {{#each fieldGroups}}
+        <fieldset class="af-fieldGroup">
+            {{#with fieldGroupLabel}}
+                <legend class="af-fieldGroup-heading">{{this}}</legend>
+            {{/with}}
+            {{> afQuickFields quickFieldsAtts}}
+        </fieldset>
+        {{/each}}
+
+        {{#if qfShouldRenderButton}}
+            <div>
+                {{> buttons}}
+            </div>
+        {{/if}}
+
+    {{/autoForm}}
+</template>

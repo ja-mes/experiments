@@ -1,0 +1,54 @@
+<template name="layout">
+    {{> navbar}}
+    {{> sAlert}}
+
+   	<div class="container-fluid">
+        {{#if currentUser}}
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="{{isActiveRoute regex='dashboard'}}">
+						<a href="{{pathFor 'dashboard'}}"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
+					</li>
+					<li class="{{isActiveRoute regex='customersHome|addCustomers'}}">
+						<a href="{{pathFor 'customersHome'}}"><span class="glyphicon glyphicon-user"></span> Customers</a>
+					</li>
+					<li class="{{isActiveRoute name='houses'}}">
+						<a href="{{pathFor 'houses'}}"><span class="glyphicon glyphicon-home"></span> Houses</a>
+					</li>
+					<li class="{{isActiveRoute regex='accountsHome'}}">
+						<a href="{{pathFor 'accountsHome'}}"><span class="glyphicon glyphicon-th-list"></span> Chart of Accounts</a>
+					</li>
+					<li class="{{isActiveRoute regex='vendorsHome'}}">
+						<a href="{{pathFor 'vendorsHome'}}"><span class="glyphicon glyphicon-usd"></span> Vendors</a>
+					</li>
+					<li class="{{isActiveRoute regex='createChecks'}}">
+						<a href="{{pathFor 'createChecks'}}"><span class="glyphicon glyphicon-credit-card"></span> Write Checks</a>
+					</li>
+                    <li class="{{isActiveRoute regex='bankingHome|bankingAdd'}}">
+                        <a href="{{pathFor 'bankingHome'}}"><span class="glyphicon glyphicon-lock"></span> Banking</a>
+                    </li>
+                    <li class="{{isActiveRoute regex='register'}}">
+                        <a href="{{pathFor 'register'}}"><span class="glyphicon glyphicon-list-alt"></span> Check Register</a>
+                    </li>
+                    <li class="{{isActiveRoute regex='createDeposits'}}">
+                        <a href="{{pathFor 'createDeposits'}}"><span class="glyphicon glyphicon-transfer"></span> Enter Deposits</a>
+                    </li>
+                    <li class="{{isActiveRoute regex='memtxn'}}">
+                        <a href="{{pathFor 'memtxn'}}"><span class="glyphicon glyphicon-time"></span> Recurring Transactions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if currentUser}}
+            <div class="currentUser}}col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                {{> yield region='header'}}
+                {{> yield}}
+            </div>
+        {{else}}
+            {{> login}}
+        {{/if}}
+    </div>
+</template>

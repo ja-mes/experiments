@@ -1,0 +1,38 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+accounts-password
+ian:accounts-ui-bootstrap-3@1.2.79
+iron:router
+jquery
+percolate:synced-cron@1.3.0
+underscore
+zimme:active-route@2.3.2
+twbs:bootstrap
+less
+service-configuration
+aldeed:collection2@2.5.0
+juliancwirko:s-alert@3.1.0
+juliancwirko:s-alert-stackslide@3.1.0
+rajit:bootstrap3-datepicker
+sacha:spin
+aldeed:autoform@5.5.0
+
+
+alethes:pages
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check

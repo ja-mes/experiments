@@ -1,0 +1,8 @@
+<template name="bankingAdd">
+    {{> bankingHeader}}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {{> quickForm schema="app.schemas.addBankForm" id="addBank" type="method" meteormethod="addBank"}}
+        </div>
+    </div>
+</template>

@@ -1,0 +1,27 @@
+<template name="customersNotes">
+    {{> customersPageHeader}}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <button class="btn btn-default" id="addNote"><span class="glyphicon glyphicon-plus"></span></button>
+        </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Preview</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each notes}}
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{note}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>

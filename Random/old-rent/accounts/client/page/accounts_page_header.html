@@ -1,0 +1,9 @@
+<template name="accountsPageHeader">
+	<h1 class="page-header">{{name}}</h1>
+
+	<ul class="header-nav nav nav-tabs">
+		<li class="{{isActiveRoute regex='accountsPageHome'}}">
+			<a href="{{pathFor 'accountsPageHome'}}">Summary</a>
+		</li>
+	</ul>
+</template>

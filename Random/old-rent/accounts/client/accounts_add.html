@@ -1,0 +1,9 @@
+<template name="accountsAdd">
+	{{> accountsHeader}}
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			{{> quickForm schema="app.schemas.addAccountForm" id="accountsAdd" type="method" meteormethod="addAccount"}}
+		</div>
+	</div>
+</template>

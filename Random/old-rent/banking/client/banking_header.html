@@ -1,0 +1,12 @@
+<template name="bankingHeader">
+    <h1 class="page-header">Banking</h1>
+
+    <ul class="header-nav nav nav-tabs">
+        <li class="{{isActiveRoute regex='bankingHome'}}">
+            <a href="{{pathFor 'bankingHome'}}">Home</a>
+        </li>
+        <li class="{{isActiveRoute regex='bankingAdd'}}">
+            <a href="{{pathFor 'bankingAdd'}}">Add</a>
+        </li>
+    </ul>
+</template>

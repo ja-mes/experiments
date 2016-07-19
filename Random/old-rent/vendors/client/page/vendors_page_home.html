@@ -1,0 +1,30 @@
+<template name="vendorsPageHome">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{> daterange}}
+        </div>
+        <div class="panel-body">
+            {{#if Template.subscriptionsReady}}
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Memo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {{#each transaction}}
+                        <tr>
+                            <td>${{amount}}</td>
+                            <td>{{memo}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            {{else}}
+                {{> spinner}}
+            {{/if}}
+        </div>
+    </div>
+</template>

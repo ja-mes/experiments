@@ -1,0 +1,11 @@
+<template name="buttons">
+    {{#if cancelButton}}
+        <button id="buttonCancel" class="btn btn-default"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
+    {{/if}}
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+    {{#if editing}}
+        <button id="buttonDelete" class="btn btn-danger">Delete</button>
+    {{/if}}
+</template>

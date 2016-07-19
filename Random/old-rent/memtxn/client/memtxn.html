@@ -1,0 +1,42 @@
+<template name="memtxn">
+    {{>recurrModal editing=true}}
+
+    <h1 class="page-header">Recurring Transactions</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Next Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each transaction}}
+                <tr>
+                    <td>{{type}}</td>
+                    <td>{{name}}</td>
+                    <td>{{amount}}</td>
+                    <td>{{nextDate}}</td>
+                    <td>
+                        <a href="#" id="edit">Edit</a>
+
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="use">Use</a></li>
+                                <li><a href="#" class="delete">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</template>

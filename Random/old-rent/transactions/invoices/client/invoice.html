@@ -1,0 +1,41 @@
+<template name="invoiceForm">
+    {{>recurrModal type="invoice"}}
+    <h1 class="page-header">Create Invoice</h1>
+
+    {{#autoForm schema="app.invoiceSchema" id="createInvoice" doc=doc type=type meteormethod="invoice"}}
+        <div class="row">
+            <div class="col-md-6">
+                {{> afQuickField name="customer"}}
+                {{> afQuickField name="memo"}}
+            </div>
+            <div class="col-md-6">
+                {{> afQuickField name="date" class="pickdate"}}
+                {{> afQuickField name="num"}}
+            </div>
+        </div>
+
+        {{> afQuickField name="charges"}}
+
+        <h4 style="display: inline"><small>Total: </small>${{total}}</h4>
+
+        <span class="pull-right">
+            <a data-toggle="modal" data-target="#recurr" href="#" id="makeRecurr" style="margin-right: 10px;">Make Recurring</a>
+            {{> buttons cancelButton=true deleteMethod="deleteTransaction"}}
+        </span>
+    {{/autoForm}}
+
+    <hr>
+    <hr>
+</template>
+
+<template name="invoice">
+    {{> invoiceForm}}
+</template>
+
+<template name="editInvoice">
+    {{> invoiceForm editing="true"}}
+</template>
+
+<template name="recurrInvoice">
+    {{> invoiceForm recurr="true"}}
+</template>

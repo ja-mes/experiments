@@ -1,0 +1,24 @@
+<template name="housesTodos">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Todos
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                {{#each todos}}
+                    <li class="list-group-item">{{this}}</li>
+                {{/each}}
+
+                <form class="form-inline" id="addNewTodo">
+                    <div class="form-group">
+                        <input name="todoName" type="text" class="form-control" placeholder="Enter new todo">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </form>
+            </ul>
+        </div>
+    </div>
+</template>

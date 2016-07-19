@@ -1,0 +1,41 @@
+<template name="customersPageHeader">
+    <div class="row">
+        <div class="col-md-9">
+            <h1 class="page-header" style="border-bottom: none; display: inline">
+                {{firstName}} {{lastName}}
+                <small>{{house}}</small>
+            </h1>
+
+            <h3 style="color: {{color}}; display: inline; margin-left: 20px">
+                <span class="{{glyphicon}}"></span> ${{balance}}
+            </h3>
+        </div>
+
+        <div class="col-md-3" style="text-align: right">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle pull-right" data-toggle="dropdown">
+                    New Transaction <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu pull-left dropdown-menu-left">
+                    <li><a href="{{pathFor route='payment'}}" class="trns">Payment</a></li>
+                    <li><a href="{{pathFor route='invoice'}}" class="trns">Invoice</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <ul class="header-nav nav nav-tabs">
+        <li class="{{isActiveRoute regex='customersPageHome'}}">
+            <a href="{{pathFor 'customersPageHome'}}">Transactions List</a>
+        </li>
+
+        <li class="{{isActiveRoute regex='customersSettings'}}">
+            <a href="{{pathFor 'customersSettings'}}">Settings</a>
+        </li>
+
+        <li class="{{isActiveRoute regex='customersNotes'}}">
+            <a href="{{pathFor 'customersNotes'}}">Notes</a>
+        </li>
+    </ul>
+</template>

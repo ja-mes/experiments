@@ -1,0 +1,12 @@
+<template name="vendorsHeader">
+	<h1 class="page-header">Vendors</h1>
+
+	<ul class="header-nav nav nav-tabs">
+		<li class="{{isActiveRoute regex='vendorsHome'}}">
+			<a href="{{pathFor 'vendorsHome'}}">Home</a>
+		</li>
+		<li class="{{isActiveRoute regex='vendorsAdd'}}">
+			<a href="{{pathFor 'vendorsAdd'}}">Add</a>
+		</li>
+	</ul>
+</template>

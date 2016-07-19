@@ -1,0 +1,18 @@
+<template name="housesAdd">
+    {{> housesHeader}}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Create House</h3>
+        </div>
+        <div class="panel-body">
+            {{> quickForm
+                collection="db.houses"
+                id="insertHouseForm"
+                type="method"
+                meteormethod="insertHouse"
+                omitFields="isRented"
+            }}
+        </div>
+    </div>
+</template>

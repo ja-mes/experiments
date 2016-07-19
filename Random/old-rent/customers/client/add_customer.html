@@ -1,0 +1,49 @@
+<template name="addCustomers">
+    {{#if housesAvailable}}
+        {{# autoForm id="addCustomer" schema="app.customersFormSchema" type="method" meteormethod="rent"}}
+            <div class="panel panel-default row">
+                <div class="panel-heading">
+                    <div class="panel-title">Customer Details</div>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6">
+                        {{> afQuickField name="firstName"}}
+                        {{> afQuickField name="lastName"}}
+                    </div>
+
+                    <div class="col-md-6">
+                        {{> afQuickField name="phone"}}
+                        {{> afQuickField name="rentDay"}}
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="panel panel-default row">
+                <div class="panel-heading">
+                    <div class="panel-title">Rent Details</div>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        {{> afQuickField name="house"}}
+                    </div>
+                    <div class="col-md-4">
+                        {{> afQuickField name="rent"}}
+                    </div>
+                    <div class="col-md-4">
+                        {{> afQuickField name="deposit"}}
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">{{> afQuickField name="lateFee"}}</div>
+
+            {{> buttons}}
+        {{/autoForm}}
+    {{else}}
+    <div class="well">
+        <h4>There are currently no vacant houses.</h4>
+    </div>
+    {{/if}}
+</template>

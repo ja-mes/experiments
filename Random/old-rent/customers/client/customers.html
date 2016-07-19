@@ -1,0 +1,45 @@
+<template name="customersHome">
+    {{> customersHeader}}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" id="search" type="text" placeholder="Search..." value="{{value}}">
+                </div>
+                <div class="form-group pull-right">
+                    <select value="{{select}}" class="form-control input-sm" id="display">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                        <option value="All">All</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="panel-body">
+        	<table class="table table-hover">
+        		<thead>
+        			<tr>
+        				<th>First Name</th>
+        				<th>Last Name</th>
+        				<th>Address</th>
+        				<th>Balance</th>
+        				<th>Rent Amount</th>
+        			</tr>
+        		</thead>
+
+        		<tbody>
+        			{{#each customer}}
+        				<tr class="{{highlight}}">
+        					<td>{{firstName}}</td>
+        					<td>{{lastName}}</td>
+        					<td>{{house}}</td>
+        					<td>${{balance}}</td>
+        					<td>${{rent}}</td>
+        				</tr>
+        			{{/each}}
+                </tbody>
+        	</table>
+        </div>
+    </div>
+</template>

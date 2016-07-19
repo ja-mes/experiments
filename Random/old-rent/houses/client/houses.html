@@ -1,0 +1,29 @@
+<template name="houses">
+	{{> housesHeader}}
+
+	<div class="form-group">
+		<form class="form" action="">
+			<input id="search" class="form-control" type="text" placeholder="Search..." value="{{value}}">
+		</form>
+	</div>
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Address</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			{{#each house}}
+				<tr>
+					<td>{{address}}</td>
+
+					<td>
+						<span class="pull-right label label-{{labelColor}}">{{isRented}}</span>
+					</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</template>

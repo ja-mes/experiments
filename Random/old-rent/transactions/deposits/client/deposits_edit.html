@@ -1,0 +1,66 @@
+<template name="depositsEdit">
+    <form class="form-inline pull-right">
+        <select id="bankAccount" class="form-control">
+            {{#each bankAccount}}
+                <option {{selectedBank}} value="{{name}}">{{name}}</option>
+            {{/each}}
+        </select>
+    </form>
+
+    <h1 class="page-header">Edit Deposits</h1>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" style="overflow: hidden">
+            <form class="form-inline">
+                <div class="input-group pull-right">
+                    <div class="input-group-addon">$</div>
+                    <input value="{{diff}}" placeholder="Descrepancies" id="diff" type="text" class="form-control">
+                </div>
+            </form>
+
+            <h4>${{total}}</h4>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 5%">
+                        <div class="text-center">
+                            <input type="checkbox" id="checkAll">
+                        </div>
+                    </th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>House</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each transaction}}
+                    <tr>
+                        <td style="width: 5%">
+                            <div class="text-center">
+                                <input class="checked" type="checkbox">
+                            </div>
+                        </td>
+                        <td>{{customer}}</td>
+                        <td class="amount">${{amount}}</td>
+                        <td>{{house}}</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <button id="cancel" class="btn btn-default">Cancel</button>
+
+    <div class="btn-group">
+        <button id="save" class="btn btn-success">Save</button>
+        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" id="delete">Delete</a></li>
+        </ul>
+    </div>
+</template>

@@ -1,0 +1,12 @@
+<template name="housesHeader">
+    <h1 class="page-header">Houses</h1>
+
+    <ul class="header-nav nav nav-tabs">
+        <li class="{{isActiveRoute 'houses'}}">
+            <a href="{{pathFor 'houses'}}">Houses List</a>
+        </li>
+        <li class="{{isActiveRoute 'housesAdd'}}">
+            <a href="{{pathFor 'housesAdd'}}">New House</a>
+        </li>
+    </ul>
+</template>

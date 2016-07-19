@@ -1,0 +1,35 @@
+<template name="housesDetails">
+    <form id="propertyInfo">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Address</label>
+                    <input value="{{address}}" type="text" name="address" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Rent Amount</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input value="{{rent}}" type="text" name="rent" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Deposit Amount</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input value="{{deposit}}" type="text" name="deposit" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-danger" id="cancel">Cancel</button>
+        <button class="btn btn-success" type="submit">Save</button>
+    </form>
+</template>

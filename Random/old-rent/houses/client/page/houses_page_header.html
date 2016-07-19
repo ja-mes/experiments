@@ -1,0 +1,22 @@
+<template name="housesPageHeader">
+    <button class="btn btn-default pull-right" id="back">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+    </button>
+
+    <h1 class="page-header">
+        {{address}}
+        <small>{{customerFirstName}} {{customerLastName}}</small>
+    </h1>
+
+	<ul class="header-nav nav nav-tabs">
+		<li class="{{isActiveRoute regex='housesHome'}}">
+			<a href="{{pathFor 'housesHome'}}">Transactions List</a>
+		</li>
+        <li class="{{isActiveRoute regex='housesDetails'}}">
+            <a href="{{pathFor 'housesDetails'}}">Property Details</a>
+        </li>
+        <li class="{{isActiveRoute regex='housesTodos'}}">
+            <a href="{{pathFor 'housesTodos'}}">Todos</a>
+        </li>
+    </ul>
+</template>

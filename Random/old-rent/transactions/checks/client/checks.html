@@ -1,0 +1,45 @@
+<template name="checksForm">
+    {{> recurrModal type="check"}}
+
+    {{#autoForm schema="app.checkSchema" id="createCheck" doc=doc}}
+        <span class="form-inline pull-right">{{> afQuickField name="bankAccount" label=false value=selectedBank}}</span>
+        <h1 class="page-header">Check #{{num}}</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                {{> afQuickField name="vendor"}}
+                {{> afQuickField name="memo"}}
+            </div>
+            <div class="col-md-6">
+                {{> afQuickField name="num" value=num}}
+                {{> afQuickField name="date"}}
+            </div>
+        </div>
+
+
+        {{> afQuickField name="charges"}}
+
+        <h4 style="display: inline"><small>Total: </small>${{expensesTotal}}</h4>
+
+        <span class="pull-right">
+            <a data-toggle="modal" data-target="#recurr" href="#" id="makeRecurr" style="margin-right: 10px;">Make Recurring</a>
+            {{> buttons deleteMethod="deleteTransaction" cancelButton=true}}
+        </span>
+    {{/autoForm}}
+
+    <hr>
+    <hr>
+</template>
+
+
+<template name="createChecks">
+    {{> checksForm}}
+</template>
+
+<template name="editChecks">
+    {{> checksForm editing="true"}}
+</template>
+
+<template name="recurrCheck">
+    {{> checksForm recurr="true"}}
+</template>

@@ -1,0 +1,78 @@
+<template name="depositsForm">
+    <form class="form-inline pull-right">
+        <select id="bankAccount" class="form-control">
+            {{#each bankAccount}}
+                <option {{selectedBank}} value="{{_id}}">{{name}}</option>
+            {{/each}}
+        </select>
+    </form>
+
+    <h1 class="page-header">Deposit</h1>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" style="overflow: hidden">
+            <form class="form-inline">
+                <div class="input-group pull-right">
+                    <div class="input-group-addon">$</div>
+                    <input placeholder="Descrepancies" id="diff" value="{{diff}}" type="text" class="form-control">
+                </div>
+            </form>
+
+            <h4>${{total}}</h4>
+        </div>
+        {{#if Template.subscriptionsReady}}
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th style="width: 5%">
+                            <div class="text-center">
+                                <input type="checkbox" id="checkAll">
+                            </div>
+                        </th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {{#each transaction}}
+                        <tr>
+                            <td style="width: 5%">
+                                <div class="text-center">
+                                    <input class="checked" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="goToPayment">{{customer}}</td>
+                            <td class="amount goToPayment">${{amount}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        {{else}}
+            {{> spinner}}
+        {{/if}}
+    </div>
+
+    <span class="pull-right">
+        <button class="btn btn-default" id="cancel"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
+        <button id="save" class="btn btn-success">Save</button>
+
+        {{#if editing}}
+        <button id="delete" class="btn btn-danger">Delete</button>
+        {{/if}}
+    </span>
+
+    <form class="form-inline" style="display: inline">
+        <label>Date</label>
+        <input class="form-control pickdate" id="date" value="{{date}}">
+    </form>
+
+</template>
+
+<template name="createDeposits">
+    {{> depositsForm}}
+</template>
+
+<template name="editDeposits">
+    {{> depositsForm editing=true}}
+</template>

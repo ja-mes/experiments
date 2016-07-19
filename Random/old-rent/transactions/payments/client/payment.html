@@ -1,0 +1,24 @@
+<template name="paymentForm">
+    <h1 class="page-header">Receive Payment</h1>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {{> quickForm schema="app.paymentSchema"
+                id="payment"
+                doc=doc
+                type=type
+                meteormethod="payment"
+                cancelButton=true
+                deleteMethod="deleteTransaction"
+            }}
+        </div>
+    </div>
+</template>
+
+<template name="payment">
+    {{> paymentForm}}
+</template>
+
+<template name="editPayment">
+    {{> paymentForm editing="true"}}
+</template>

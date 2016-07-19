@@ -1,0 +1,34 @@
+<template name="customersPageHome">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{> daterange}}
+        </div>
+        {{#if Template.subscriptionsReady}}
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Memo</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {{#each transaction}}
+                        <tr>
+                            <td>{{type}}</td>
+                            <td>${{amount}}</td>
+                            <td>{{memo}}</td>
+                            <td>{{date}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        {{else}}
+            {{> spinner}}
+        {{/if}}
+    </div>
+</template>

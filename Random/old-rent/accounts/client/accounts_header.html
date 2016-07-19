@@ -1,0 +1,12 @@
+<template name="accountsHeader">
+	<h1 class="page-header">Chart of Accounts</h1>
+
+	<ul class="header-nav nav nav-tabs">
+		<li class="{{isActiveRoute 'accountsHome'}}">
+			<a href="{{pathFor 'accountsHome'}}">Home</a>
+		</li>
+		<li class="{{isActiveRoute 'accountsAdd'}}">
+			<a href="{{pathFor 'accountsAdd'}}">Add</a>
+		</li>
+	</ul>
+</template>

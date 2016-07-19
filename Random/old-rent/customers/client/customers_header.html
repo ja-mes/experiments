@@ -1,0 +1,12 @@
+<template name="customersHeader">
+    <h1 class="page-header">Customers</h1>
+    <ul class="header-nav nav nav-tabs">
+        <li class="{{isActiveRoute regex='customersHome'}}">
+            <a href="{{pathFor 'customersHome'}}">Customers List</a>
+        </li>
+
+        <li class="{{isActiveRoute regex='addCustomers'}}">
+            <a href="{{pathFor 'addCustomers'}}">New Customer</a>
+        </li>
+    </ul>
+</template>
