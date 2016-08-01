@@ -220,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="456" y="2172"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="JEJ-AL-Vsm">
             <objects>
-                <viewController id="VJR-GM-kPA" sceneMemberID="viewController">
+                <viewController id="VJR-GM-kPA" customClass="LoginViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fGG-Jr-RlM"/>
                         <viewControllerLayoutGuide type="bottom" id="6wc-pL-qPJ"/>
@@ -313,6 +313,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonDidTouch:" destination="VJR-GM-kPA" eventType="touchUpInside" id="5fO-lt-AXT"/>
+                                        </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-hk-Sby">
                                         <rect key="frame" x="30" y="172" width="25" height="25"/>
@@ -360,6 +363,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dialogView" destination="v9x-qQ-Yum" id="pyb-rJ-Cec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Cl-M0-zfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="68q-px-whi" userLabel="Exit" sceneMemberID="exit"/>
