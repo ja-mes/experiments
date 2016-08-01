@@ -44,7 +44,7 @@
 		9B4B93D81D4E7A1E00DD23FF /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B93BB1D4E7A1E00DD23FF /* TransitionManager.swift */; };
 		9B4B93D91D4E7A1E00DD23FF /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B93BC1D4E7A1E00DD23FF /* TransitionZoom.swift */; };
 		9B4B93DA1D4E7A1E00DD23FF /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B93BD1D4E7A1E00DD23FF /* UnwindSegue.swift */; };
-		9B984B3B1D4F74710010AA84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B984B3A1D4F74710010AA84 /* LoginViewController.swift */; };
+		9B984B3F1D4F751D0010AA84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +109,7 @@
 		9B4B93BB1D4E7A1E00DD23FF /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		9B4B93BC1D4E7A1E00DD23FF /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		9B4B93BD1D4E7A1E00DD23FF /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
-		9B984B3A1D4F74710010AA84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +140,7 @@
 		9B2270911D4E6A17004E911D = {
 			isa = PBXGroup;
 			children = (
+				9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */,
 				9B22709C1D4E6A17004E911D /* MyApp */,
 				9B2270B41D4E6A17004E911D /* MyAppTests */,
 				9B2270BF1D4E6A17004E911D /* MyAppUITests */,
@@ -163,7 +164,6 @@
 				9B4B939F1D4E7A1E00DD23FF /* Spring */,
 				9B22709D1D4E6A17004E911D /* AppDelegate.swift */,
 				9B22709F1D4E6A17004E911D /* ViewController.swift */,
-				9B984B3A1D4F74710010AA84 /* LoginViewController.swift */,
 				9B2270A11D4E6A17004E911D /* Main.storyboard */,
 				9B2270A71D4E6A17004E911D /* Assets.xcassets */,
 				9B2270A91D4E6A17004E911D /* LaunchScreen.storyboard */,
@@ -374,7 +374,7 @@
 				9B2270A61D4E6A17004E911D /* MyApp.xcdatamodeld in Sources */,
 				9B4B93CF1D4E7A1E00DD23FF /* SoundPlayer.swift in Sources */,
 				9B4B93C81D4E7A1E00DD23FF /* DesignableView.swift in Sources */,
-				9B984B3B1D4F74710010AA84 /* LoginViewController.swift in Sources */,
+				9B984B3F1D4F751D0010AA84 /* LoginViewController.swift in Sources */,
 				9B4B93C51D4E7A1E00DD23FF /* DesignableTabBarController.swift in Sources */,
 				9B4B93C21D4E7A1E00DD23FF /* DesignableButton.swift in Sources */,
 				9B2270A01D4E6A17004E911D /* ViewController.swift in Sources */,
