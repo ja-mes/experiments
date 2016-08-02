@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="456" y="1399"/>
         </scene>
-        <!--View Controller-->
+        <!--Learn View Controller-->
         <scene sceneID="QNK-e7-U18">
             <objects>
-                <viewController id="SzA-vQ-kGe" sceneMemberID="viewController">
+                <viewController id="SzA-vQ-kGe" customClass="LearnViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k2G-3r-bg9"/>
                         <viewControllerLayoutGuide type="bottom" id="yV0-FH-yHM"/>
