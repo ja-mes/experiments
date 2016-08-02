@@ -93,8 +93,9 @@ var personB = personA
 personB.name = "Joe"
 personA.name
 
-
-
+// Optionals
+var answer: String?
+UILabel().text = answer ?? ""
 
 
 
