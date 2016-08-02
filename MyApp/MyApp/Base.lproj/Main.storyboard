@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IBY-i5-hoT"/>
-                        <viewControllerLayoutGuide type="bottom" id="LZJ-wy-AQ2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1-Stories" translatesAutoresizingMaskIntoConstraints="NO" id="ljs-q3-iFY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WS-a2-JdA">
-                                <rect key="frame" x="82" y="117" width="60" height="30"/>
-                                <connections>
-                                    <segue destination="F4c-dc-Ljg" kind="presentation" modalTransitionStyle="crossDissolve" id="Eqi-J9-Mu2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-dt-U5K">
-                                <rect key="frame" x="5" y="21" width="46" height="36"/>
-                                <connections>
-                                    <segue destination="jQf-41-EeT" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="lHR-1i-hwY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKh-1O-bYh">
-                                <rect key="frame" x="260" y="26" width="53" height="36"/>
-                                <connections>
-                                    <segue destination="VJR-GM-kPA" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="epQ-rd-rKR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-OV-yZ8">
-                                <rect key="frame" x="0.0" y="155" width="320" height="108"/>
-                                <connections>
-                                    <segue destination="3pj-Wc-EoW" kind="presentation" modalTransitionStyle="coverVertical" id="vMi-6r-3WK"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="579" y="586"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="Om0-fs-qd0">
             <objects>
@@ -88,7 +40,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7W-MB-sTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jzr-a3-hKW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="586"/>
+            <point key="canvasLocation" x="1511" y="586"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ld2-9L-HYi">
@@ -119,7 +71,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iBc-cQ-hPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aoA-a3-teL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="1399"/>
+            <point key="canvasLocation" x="1511" y="1385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dQb-bu-58v">
@@ -196,7 +148,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dF-wn-Luz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fp1-YO-ENN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="937" y="1399"/>
+            <point key="canvasLocation" x="961" y="1385"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TNY-gj-VZx">
+            <objects>
+                <tableViewController id="1DF-j6-BYX" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6ac-Vq-E46">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rMu-M7-prf">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rMu-M7-prf" id="jZM-g2-CWY">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1DF-j6-BYX" id="qOG-QJ-5vo"/>
+                            <outlet property="delegate" destination="1DF-j6-BYX" id="tmL-RS-GgV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6gh-xs-GqN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2M-fe-Uch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="586"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GBp-Yr-C3O">
@@ -296,7 +278,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4og-a4-s44" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="8mP-T8-anD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="456" y="1399"/>
+            <point key="canvasLocation" x="456" y="1385"/>
         </scene>
         <!--Learn View Controller-->
         <scene sceneID="QNK-e7-U18">
@@ -315,15 +297,17 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aEo-7f-dBA">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afy-Hm-cU0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <connections>
+                                                <action selector="closeButtonDidTouch:" destination="SzA-vQ-kGe" eventType="touchUpInside" id="8aT-41-lsA"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </view>
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afy-Hm-cU0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <connections>
-                                    <segue destination="81C-NS-lXu" kind="unwind" unwindAction="unwindToViewController:" id="QgF-Ti-aJv"/>
-                                </connections>
-                            </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULy-35-1Qg" customClass="DesignableView" customModule="MyApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="144" width="280" height="280"/>
                                 <subviews>
@@ -356,6 +340,9 @@
                                         <state key="normal" title="Learn Sketch + Swift">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="learnButtonDidTouch:" destination="SzA-vQ-kGe" eventType="touchUpInside" id="tix-2I-5LM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F47-T1-uOc">
                                         <rect key="frame" x="0.0" y="202" width="280" height="70"/>
@@ -386,8 +373,8 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -397,18 +384,17 @@
                             <constraint firstItem="9px-tS-ylY" firstAttribute="leading" secondItem="8Eo-xz-Pm6" secondAttribute="leading" id="IHk-bH-jfU"/>
                             <constraint firstItem="yV0-FH-yHM" firstAttribute="top" secondItem="9px-tS-ylY" secondAttribute="bottom" id="LRg-8H-fIR"/>
                             <constraint firstItem="ULy-35-1Qg" firstAttribute="centerX" secondItem="8Eo-xz-Pm6" secondAttribute="centerX" id="NBD-FY-ASN"/>
-                            <constraint firstAttribute="trailing" secondItem="afy-Hm-cU0" secondAttribute="trailing" id="OLn-fI-S7M"/>
-                            <constraint firstItem="afy-Hm-cU0" firstAttribute="top" secondItem="8Eo-xz-Pm6" secondAttribute="top" id="Syt-Fd-k4E"/>
-                            <constraint firstItem="yV0-FH-yHM" firstAttribute="top" secondItem="afy-Hm-cU0" secondAttribute="bottom" id="Zjy-bd-cu3"/>
-                            <constraint firstItem="afy-Hm-cU0" firstAttribute="leading" secondItem="8Eo-xz-Pm6" secondAttribute="leading" id="asr-gY-GRE"/>
                             <constraint firstItem="ULy-35-1Qg" firstAttribute="centerY" secondItem="8Eo-xz-Pm6" secondAttribute="centerY" id="glc-5q-ifF"/>
                             <constraint firstAttribute="trailing" secondItem="9px-tS-ylY" secondAttribute="trailing" id="oyT-f5-2Zw"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bookImageView" destination="Fk8-qZ-hfw" id="NrF-mM-YZr"/>
+                        <outlet property="dialogView" destination="ULy-35-1Qg" id="P9T-6m-Rd2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBg-Jq-gaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="81C-NS-lXu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="456" y="2172"/>
         </scene>
@@ -562,11 +548,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Cl-M0-zfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="68q-px-whi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="1405"/>
+            <point key="canvasLocation" x="-7" y="1385"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LqU-oP-brn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WZJ-ZJ-qvm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jlp-SC-OTi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1DF-j6-BYX" kind="relationship" relationship="rootViewController" id="hjZ-dO-PVh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEG-g0-0AZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="586"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1-Stories" width="320" height="568"/>
         <image name="2-Comments" width="320" height="1161"/>
         <image name="6-Comment" width="320" height="568"/>
         <image name="action-share" width="19" height="27"/>
