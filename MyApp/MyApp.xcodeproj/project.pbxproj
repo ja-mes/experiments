@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9B22709E1D4E6A17004E911D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22709D1D4E6A17004E911D /* AppDelegate.swift */; };
-		9B2270A01D4E6A17004E911D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22709F1D4E6A17004E911D /* ViewController.swift */; };
 		9B2270A31D4E6A17004E911D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2270A11D4E6A17004E911D /* Main.storyboard */; };
 		9B2270A61D4E6A17004E911D /* MyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B2270A41D4E6A17004E911D /* MyApp.xcdatamodeld */; };
 		9B2270A81D4E6A17004E911D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B2270A71D4E6A17004E911D /* Assets.xcassets */; };
@@ -45,6 +44,7 @@
 		9B4B93D91D4E7A1E00DD23FF /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B93BC1D4E7A1E00DD23FF /* TransitionZoom.swift */; };
 		9B4B93DA1D4E7A1E00DD23FF /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B93BD1D4E7A1E00DD23FF /* UnwindSegue.swift */; };
 		9B54D3271D50F644007938B8 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3261D50F644007938B8 /* LearnViewController.swift */; };
+		9B54D3291D511FF3007938B8 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3281D511FF3007938B8 /* StoriesTableViewController.swift */; };
 		9B984B3F1D4F751D0010AA84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +68,6 @@
 /* Begin PBXFileReference section */
 		9B22709A1D4E6A17004E911D /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B22709D1D4E6A17004E911D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B22709F1D4E6A17004E911D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B2270A21D4E6A17004E911D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B2270A51D4E6A17004E911D /* MyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyApp.xcdatamodel; sourceTree = "<group>"; };
 		9B2270A71D4E6A17004E911D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		9B4B93BC1D4E7A1E00DD23FF /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		9B4B93BD1D4E7A1E00DD23FF /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		9B54D3261D50F644007938B8 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		9B54D3281D511FF3007938B8 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 		9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +164,7 @@
 			children = (
 				9B4B939F1D4E7A1E00DD23FF /* Spring */,
 				9B22709D1D4E6A17004E911D /* AppDelegate.swift */,
-				9B22709F1D4E6A17004E911D /* ViewController.swift */,
+				9B54D3281D511FF3007938B8 /* StoriesTableViewController.swift */,
 				9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */,
 				9B54D3261D50F644007938B8 /* LearnViewController.swift */,
 				9B2270A11D4E6A17004E911D /* Main.storyboard */,
@@ -381,12 +381,12 @@
 				9B984B3F1D4F751D0010AA84 /* LoginViewController.swift in Sources */,
 				9B4B93C51D4E7A1E00DD23FF /* DesignableTabBarController.swift in Sources */,
 				9B4B93C21D4E7A1E00DD23FF /* DesignableButton.swift in Sources */,
-				9B2270A01D4E6A17004E911D /* ViewController.swift in Sources */,
 				9B4B93D91D4E7A1E00DD23FF /* TransitionZoom.swift in Sources */,
 				9B4B93C61D4E7A1E00DD23FF /* DesignableTextField.swift in Sources */,
 				9B4B93D81D4E7A1E00DD23FF /* TransitionManager.swift in Sources */,
 				9B4B93D41D4E7A1E00DD23FF /* SpringLabel.swift in Sources */,
 				9B4B93BE1D4E7A1E00DD23FF /* AsyncButton.swift in Sources */,
+				9B54D3291D511FF3007938B8 /* StoriesTableViewController.swift in Sources */,
 				9B4B93BF1D4E7A1E00DD23FF /* AsyncImageView.swift in Sources */,
 				9B4B93C71D4E7A1E00DD23FF /* DesignableTextView.swift in Sources */,
 				9B4B93D71D4E7A1E00DD23FF /* SpringView.swift in Sources */,
