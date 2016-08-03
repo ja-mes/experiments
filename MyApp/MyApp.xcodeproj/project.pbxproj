@@ -45,6 +45,8 @@
 		9B4B93DA1D4E7A1E00DD23FF /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B93BD1D4E7A1E00DD23FF /* UnwindSegue.swift */; };
 		9B54D3271D50F644007938B8 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3261D50F644007938B8 /* LearnViewController.swift */; };
 		9B54D32D1D5120B3007938B8 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D32C1D5120B3007938B8 /* StoriesTableViewController.swift */; };
+		9B54D32F1D51811A007938B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D32E1D51811A007938B8 /* MenuViewController.swift */; };
+		9B54D3311D518216007938B8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3301D518216007938B8 /* WebViewController.swift */; };
 		9B984B3F1D4F751D0010AA84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		9B4B93BD1D4E7A1E00DD23FF /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		9B54D3261D50F644007938B8 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		9B54D32C1D5120B3007938B8 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoriesTableViewController.swift; path = ../StoriesTableViewController.swift; sourceTree = "<group>"; };
+		9B54D32E1D51811A007938B8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9B54D3301D518216007938B8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,7 +170,9 @@
 				9B22709D1D4E6A17004E911D /* AppDelegate.swift */,
 				9B54D32C1D5120B3007938B8 /* StoriesTableViewController.swift */,
 				9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */,
+				9B54D32E1D51811A007938B8 /* MenuViewController.swift */,
 				9B54D3261D50F644007938B8 /* LearnViewController.swift */,
+				9B54D3301D518216007938B8 /* WebViewController.swift */,
 				9B2270A11D4E6A17004E911D /* Main.storyboard */,
 				9B2270A71D4E6A17004E911D /* Assets.xcassets */,
 				9B2270A91D4E6A17004E911D /* LaunchScreen.storyboard */,
@@ -368,6 +374,7 @@
 				9B4B93D31D4E7A1E00DD23FF /* SpringImageView.swift in Sources */,
 				9B4B93C01D4E7A1E00DD23FF /* AutoTextView.swift in Sources */,
 				9B4B93C91D4E7A1E00DD23FF /* ImageLoader.swift in Sources */,
+				9B54D32F1D51811A007938B8 /* MenuViewController.swift in Sources */,
 				9B4B93CE1D4E7A1E00DD23FF /* Misc.swift in Sources */,
 				9B54D3271D50F644007938B8 /* LearnViewController.swift in Sources */,
 				9B4B93C11D4E7A1E00DD23FF /* BlurView.swift in Sources */,
@@ -392,6 +399,7 @@
 				9B4B93D71D4E7A1E00DD23FF /* SpringView.swift in Sources */,
 				9B4B93D61D4E7A1E00DD23FF /* SpringTextView.swift in Sources */,
 				9B4B93CB1D4E7A1E00DD23FF /* KeyboardLayoutConstraint.swift in Sources */,
+				9B54D3311D518216007938B8 /* WebViewController.swift in Sources */,
 				9B4B93D21D4E7A1E00DD23FF /* SpringButton.swift in Sources */,
 				9B4B93D11D4E7A1E00DD23FF /* SpringAnimation.swift in Sources */,
 				9B4B93C31D4E7A1E00DD23FF /* DesignableImageView.swift in Sources */,

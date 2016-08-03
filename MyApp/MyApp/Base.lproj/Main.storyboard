@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1511" y="1385"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="dQb-bu-58v">
             <objects>
-                <viewController id="3pj-Wc-EoW" sceneMemberID="viewController">
+                <viewController id="3pj-Wc-EoW" customClass="WebViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hyl-ca-KG2"/>
                         <viewControllerLayoutGuide type="bottom" id="TUI-VE-nwz"/>
@@ -109,7 +109,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="fp1-YO-ENN" kind="unwind" unwindAction="unwindToViewController:" id="z5C-FV-vDy"/>
+                                    <action selector="closeButtonDidTouch:" destination="3pj-Wc-EoW" eventType="touchUpInside" id="3st-nb-hbX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRi-w6-KEB" customClass="DesignableButton" customModule="MyApp" customModuleProvider="target">
@@ -146,7 +146,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dF-wn-Luz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="fp1-YO-ENN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="961" y="1385"/>
         </scene>
@@ -159,20 +158,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="rMu-M7-prf">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="100" id="rMu-M7-prf">
                                 <rect key="frame" x="0.0" y="92" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rMu-M7-prf" id="jZM-g2-CWY">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-mB-5wL">
-                                            <rect key="frame" x="10" y="8" width="20" height="20"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="20" id="LWB-Gx-HpJ"/>
-                                                <constraint firstAttribute="height" constant="20" id="tq6-DV-oOK"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1y-u7-sZn">
                                             <rect key="frame" x="38" y="8" width="237" height="25"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
@@ -226,6 +218,13 @@
                                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-mB-5wL">
+                                            <rect key="frame" x="10" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="LWB-Gx-HpJ"/>
+                                                <constraint firstAttribute="height" constant="20" id="tq6-DV-oOK"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="h1x-Hm-EYn" firstAttribute="top" secondItem="p1y-u7-sZn" secondAttribute="bottom" constant="3" id="1IS-K6-SO3"/>
@@ -269,9 +268,9 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="VJR-GM-kPA" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="QQc-Vc-o2B"/>
-                        <segue destination="jQf-41-EeT" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="8JX-C7-c9f"/>
-                        <segue destination="3pj-Wc-EoW" kind="presentation" identifier="webSeque" modalPresentationStyle="overCurrentContext" id="RhR-Ek-WuR"/>
+                        <segue destination="VJR-GM-kPA" kind="presentation" identifier="LoginSeque" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="QQc-Vc-o2B"/>
+                        <segue destination="jQf-41-EeT" kind="presentation" identifier="MenuSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="8JX-C7-c9f"/>
+                        <segue destination="3pj-Wc-EoW" kind="presentation" identifier="WebSeque" modalPresentationStyle="overCurrentContext" id="RhR-Ek-WuR"/>
                         <segue destination="F4c-dc-Ljg" kind="show" identifier="commentsSeque" id="Qdq-xE-hTV"/>
                     </connections>
                 </tableViewController>
@@ -279,10 +278,10 @@
             </objects>
             <point key="canvasLocation" x="961" y="586"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="GBp-Yr-C3O">
             <objects>
-                <viewController id="jQf-41-EeT" sceneMemberID="viewController">
+                <viewController id="jQf-41-EeT" customClass="MenuViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M1Y-IM-9xQ"/>
                         <viewControllerLayoutGuide type="bottom" id="3fz-jo-CzQ"/>
@@ -291,12 +290,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-E7-nD2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <connections>
-                                    <segue destination="8mP-T8-anD" kind="unwind" unwindAction="unwindToViewController:" id="1pY-fA-Azm"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6f-08-FF3" customClass="DesignableView" customModule="MyApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="144" width="280" height="280"/>
                                 <subviews>
@@ -365,6 +358,12 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeDown"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOK-E7-nD2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <action selector="closeButtonDidTouch:" destination="jQf-41-EeT" eventType="touchUpInside" id="6di-Hd-aIy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -373,9 +372,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dialogView" destination="q6f-08-FF3" id="o1X-9c-ASu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4og-a4-s44" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="8mP-T8-anD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="456" y="1385"/>
         </scene>
@@ -518,7 +519,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEM-wl-Kqm">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                             <connections>
-                                                <segue destination="68q-px-whi" kind="unwind" unwindAction="unwindToViewController:" id="mlT-0F-bZr"/>
+                                                <action selector="closeButtonDidTouch:" destination="VJR-GM-kPA" eventType="touchUpInside" id="UUW-Ew-kAT"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -645,7 +646,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Cl-M0-zfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="68q-px-whi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-7" y="1385"/>
         </scene>

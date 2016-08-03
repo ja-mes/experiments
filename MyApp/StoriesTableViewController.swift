@@ -20,8 +20,16 @@ class StoriesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(<#T##identifier: String##String#>, forIndexPath: <#T##NSIndexPath#>)
+        let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell")! as UITableViewCell
+        tableView.rowHeight = 100
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("WebSeque", sender: self)
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
