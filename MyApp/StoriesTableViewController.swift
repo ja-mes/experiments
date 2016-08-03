@@ -9,6 +9,13 @@
 import UIKit
 
 class StoriesTableViewController: UITableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
     @IBAction func menuButtonDidTouch(sender: AnyObject) {
         performSegueWithIdentifier("MenuSegue", sender: self)
     }
@@ -23,7 +30,6 @@ class StoriesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell")! as! StoryTableViewCell
-        tableView.rowHeight = 100
         
         cell.titleLabel.text = "Learn iOS Design and Xcode"
         cell.badgeImageView.image = UIImage(named: "badge-apple")
