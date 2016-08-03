@@ -286,7 +286,7 @@
                         <segue destination="VJR-GM-kPA" kind="presentation" identifier="LoginSeque" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="QQc-Vc-o2B"/>
                         <segue destination="jQf-41-EeT" kind="presentation" identifier="MenuSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="8JX-C7-c9f"/>
                         <segue destination="3pj-Wc-EoW" kind="presentation" identifier="WebSeque" modalPresentationStyle="overCurrentContext" id="RhR-Ek-WuR"/>
-                        <segue destination="F4c-dc-Ljg" kind="show" identifier="commentsSeque" id="Qdq-xE-hTV"/>
+                        <segue destination="F4c-dc-Ljg" kind="show" identifier="CommentsSegue" id="Qdq-xE-hTV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2M-fe-Uch" userLabel="First Responder" sceneMemberID="firstResponder"/>
