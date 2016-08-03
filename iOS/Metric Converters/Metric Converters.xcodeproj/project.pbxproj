@@ -15,6 +15,7 @@
 		9BBF3D491D52B58D00C631E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF3D471D52B58D00C631E6 /* LaunchScreen.storyboard */; };
 		9BBF3D541D52B58D00C631E6 /* Metric_ConvertersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D531D52B58D00C631E6 /* Metric_ConvertersTests.swift */; };
 		9BBF3D5F1D52B58D00C631E6 /* Metric_ConvertersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D5E1D52B58D00C631E6 /* Metric_ConvertersUITests.swift */; };
+		9BBF3D6D1D52B96600C631E6 /* ConvertersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D6C1D52B96600C631E6 /* ConvertersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9BBF3D5A1D52B58D00C631E6 /* Metric ConvertersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metric ConvertersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBF3D5E1D52B58D00C631E6 /* Metric_ConvertersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric_ConvertersUITests.swift; sourceTree = "<group>"; };
 		9BBF3D601D52B58D00C631E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBF3D6C1D52B96600C631E6 /* ConvertersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertersTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9BBF3D3B1D52B58D00C631E6 /* AppDelegate.swift */,
 				9BBF3D3D1D52B58D00C631E6 /* ViewController.swift */,
+				9BBF3D6C1D52B96600C631E6 /* ConvertersTableViewController.swift */,
 				9BBF3D3F1D52B58D00C631E6 /* Main.storyboard */,
 				9BBF3D451D52B58D00C631E6 /* Assets.xcassets */,
 				9BBF3D471D52B58D00C631E6 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BBF3D6D1D52B96600C631E6 /* ConvertersTableViewController.swift in Sources */,
 				9BBF3D3E1D52B58D00C631E6 /* ViewController.swift in Sources */,
 				9BBF3D441D52B58D00C631E6 /* Metric_Converters.xcdatamodeld in Sources */,
 				9BBF3D3C1D52B58D00C631E6 /* AppDelegate.swift in Sources */,
