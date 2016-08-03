@@ -48,6 +48,7 @@
 		9B54D32F1D51811A007938B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D32E1D51811A007938B8 /* MenuViewController.swift */; };
 		9B54D3311D518216007938B8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3301D518216007938B8 /* WebViewController.swift */; };
 		9B54D3331D521024007938B8 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3321D521024007938B8 /* StoryTableViewCell.swift */; };
+		9B54D3351D5249E9007938B8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B54D3341D5249E9007938B8 /* Data.swift */; };
 		9B984B3F1D4F751D0010AA84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		9B54D32E1D51811A007938B8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9B54D3301D518216007938B8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9B54D3321D521024007938B8 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		9B54D3341D5249E9007938B8 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 				9B984B3E1D4F751D0010AA84 /* LoginViewController.swift */,
 				9B54D32E1D51811A007938B8 /* MenuViewController.swift */,
 				9B54D3261D50F644007938B8 /* LearnViewController.swift */,
+				9B54D3341D5249E9007938B8 /* Data.swift */,
 				9B54D3301D518216007938B8 /* WebViewController.swift */,
 				9B2270A11D4E6A17004E911D /* Main.storyboard */,
 				9B2270A71D4E6A17004E911D /* Assets.xcassets */,
@@ -380,6 +383,7 @@
 				9B54D32F1D51811A007938B8 /* MenuViewController.swift in Sources */,
 				9B4B93CE1D4E7A1E00DD23FF /* Misc.swift in Sources */,
 				9B54D3271D50F644007938B8 /* LearnViewController.swift in Sources */,
+				9B54D3351D5249E9007938B8 /* Data.swift in Sources */,
 				9B4B93C11D4E7A1E00DD23FF /* BlurView.swift in Sources */,
 				9B4B93DA1D4E7A1E00DD23FF /* UnwindSegue.swift in Sources */,
 				9B4B93CC1D4E7A1E00DD23FF /* LoadingView.swift in Sources */,
