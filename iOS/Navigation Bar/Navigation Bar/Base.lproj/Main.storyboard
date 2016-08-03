@@ -25,22 +25,37 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Navigation Bars" id="OE4-2a-3GO">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="Pqo-fT-bbN"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="rewind" id="Brm-bh-UEO"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Reset" id="ZmX-cJ-sos">
+                                            <connections>
+                                                <action selector="resetButtonDidTouch:" destination="BYZ-38-t0r" id="5oD-jk-GrE"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzx-7m-y7j">
+                                <rect key="frame" x="286" y="265" width="29" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leg-7X-MOx">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="csn-Ar-Hk5"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem systemItem="organize" id="pOL-vf-eOd"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Jlp-oI-ww8"/>
-                                    <barButtonItem systemItem="bookmarks" id="vBC-My-9Sk"/>
+                                    <barButtonItem systemItem="play" id="TGA-AF-nOG">
+                                        <connections>
+                                            <action selector="playButtonDidTouch:" destination="BYZ-38-t0r" id="MY3-3v-PCc"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="8ON-62-ndy"/>
-                                    <barButtonItem systemItem="stop" id="r40-F2-4Fl"/>
+                                    <barButtonItem systemItem="stop" id="r40-F2-4Fl">
+                                        <connections>
+                                            <action selector="stopButtonDidTouch:" destination="BYZ-38-t0r" id="Sms-7A-uJZ"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -50,13 +65,19 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="leg-7X-MOx" secondAttribute="bottom" id="YsY-Fb-CfR"/>
                             <constraint firstItem="ZpI-Fr-vr3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="eBG-aS-mk7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="leg-7X-MOx" secondAttribute="trailing" constant="-20" id="nIj-Vz-Opg"/>
+                            <constraint firstItem="bzx-7m-y7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uwR-VF-wad"/>
                             <constraint firstItem="leg-7X-MOx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zPE-cP-btZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZpI-Fr-vr3" secondAttribute="trailing" constant="-20" id="zco-yu-qLS"/>
+                            <constraint firstItem="bzx-7m-y7j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zdT-wW-LWf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tickerLabel" destination="bzx-7m-y7j" id="KM0-uk-yZB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="885" y="548"/>
         </scene>
     </scenes>
 </document>
