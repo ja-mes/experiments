@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BBF3D3C1D52B58D00C631E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D3B1D52B58D00C631E6 /* AppDelegate.swift */; };
+		9BBF3D3E1D52B58D00C631E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D3D1D52B58D00C631E6 /* ViewController.swift */; };
+		9BBF3D411D52B58D00C631E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF3D3F1D52B58D00C631E6 /* Main.storyboard */; };
+		9BBF3D441D52B58D00C631E6 /* Metric_Converters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D421D52B58D00C631E6 /* Metric_Converters.xcdatamodeld */; };
+		9BBF3D461D52B58D00C631E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF3D451D52B58D00C631E6 /* Assets.xcassets */; };
+		9BBF3D491D52B58D00C631E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF3D471D52B58D00C631E6 /* LaunchScreen.storyboard */; };
+		9BBF3D541D52B58D00C631E6 /* Metric_ConvertersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D531D52B58D00C631E6 /* Metric_ConvertersTests.swift */; };
+		9BBF3D5F1D52B58D00C631E6 /* Metric_ConvertersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF3D5E1D52B58D00C631E6 /* Metric_ConvertersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BBF3D501D52B58D00C631E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BBF3D301D52B58D00C631E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BBF3D371D52B58D00C631E6;
+			remoteInfo = "Metric Converters";
+		};
+		9BBF3D5B1D52B58D00C631E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BBF3D301D52B58D00C631E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BBF3D371D52B58D00C631E6;
+			remoteInfo = "Metric Converters";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BBF3D381D52B58D00C631E6 /* Metric Converters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metric Converters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBF3D3B1D52B58D00C631E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BBF3D3D1D52B58D00C631E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BBF3D401D52B58D00C631E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BBF3D431D52B58D00C631E6 /* Metric_Converters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Metric_Converters.xcdatamodel; sourceTree = "<group>"; };
+		9BBF3D451D52B58D00C631E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BBF3D481D52B58D00C631E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BBF3D4A1D52B58D00C631E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBF3D4F1D52B58D00C631E6 /* Metric ConvertersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metric ConvertersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBF3D531D52B58D00C631E6 /* Metric_ConvertersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric_ConvertersTests.swift; sourceTree = "<group>"; };
+		9BBF3D551D52B58D00C631E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBF3D5A1D52B58D00C631E6 /* Metric ConvertersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metric ConvertersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBF3D5E1D52B58D00C631E6 /* Metric_ConvertersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric_ConvertersUITests.swift; sourceTree = "<group>"; };
+		9BBF3D601D52B58D00C631E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BBF3D351D52B58D00C631E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF3D4C1D52B58D00C631E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF3D571D52B58D00C631E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BBF3D2F1D52B58D00C631E6 = {
+			isa = PBXGroup;
+			children = (
+				9BBF3D3A1D52B58D00C631E6 /* Metric Converters */,
+				9BBF3D521D52B58D00C631E6 /* Metric ConvertersTests */,
+				9BBF3D5D1D52B58D00C631E6 /* Metric ConvertersUITests */,
+				9BBF3D391D52B58D00C631E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BBF3D391D52B58D00C631E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF3D381D52B58D00C631E6 /* Metric Converters.app */,
+				9BBF3D4F1D52B58D00C631E6 /* Metric ConvertersTests.xctest */,
+				9BBF3D5A1D52B58D00C631E6 /* Metric ConvertersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BBF3D3A1D52B58D00C631E6 /* Metric Converters */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF3D3B1D52B58D00C631E6 /* AppDelegate.swift */,
+				9BBF3D3D1D52B58D00C631E6 /* ViewController.swift */,
+				9BBF3D3F1D52B58D00C631E6 /* Main.storyboard */,
+				9BBF3D451D52B58D00C631E6 /* Assets.xcassets */,
+				9BBF3D471D52B58D00C631E6 /* LaunchScreen.storyboard */,
+				9BBF3D4A1D52B58D00C631E6 /* Info.plist */,
+				9BBF3D421D52B58D00C631E6 /* Metric_Converters.xcdatamodeld */,
+			);
+			path = "Metric Converters";
+			sourceTree = "<group>";
+		};
+		9BBF3D521D52B58D00C631E6 /* Metric ConvertersTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF3D531D52B58D00C631E6 /* Metric_ConvertersTests.swift */,
+				9BBF3D551D52B58D00C631E6 /* Info.plist */,
+			);
+			path = "Metric ConvertersTests";
+			sourceTree = "<group>";
+		};
+		9BBF3D5D1D52B58D00C631E6 /* Metric ConvertersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF3D5E1D52B58D00C631E6 /* Metric_ConvertersUITests.swift */,
+				9BBF3D601D52B58D00C631E6 /* Info.plist */,
+			);
+			path = "Metric ConvertersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BBF3D371D52B58D00C631E6 /* Metric Converters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BBF3D631D52B58D00C631E6 /* Build configuration list for PBXNativeTarget "Metric Converters" */;
+			buildPhases = (
+				9BBF3D341D52B58D00C631E6 /* Sources */,
+				9BBF3D351D52B58D00C631E6 /* Frameworks */,
+				9BBF3D361D52B58D00C631E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Metric Converters";
+			productName = "Metric Converters";
+			productReference = 9BBF3D381D52B58D00C631E6 /* Metric Converters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BBF3D4E1D52B58D00C631E6 /* Metric ConvertersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BBF3D661D52B58D00C631E6 /* Build configuration list for PBXNativeTarget "Metric ConvertersTests" */;
+			buildPhases = (
+				9BBF3D4B1D52B58D00C631E6 /* Sources */,
+				9BBF3D4C1D52B58D00C631E6 /* Frameworks */,
+				9BBF3D4D1D52B58D00C631E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BBF3D511D52B58D00C631E6 /* PBXTargetDependency */,
+			);
+			name = "Metric ConvertersTests";
+			productName = "Metric ConvertersTests";
+			productReference = 9BBF3D4F1D52B58D00C631E6 /* Metric ConvertersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BBF3D591D52B58D00C631E6 /* Metric ConvertersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BBF3D691D52B58D00C631E6 /* Build configuration list for PBXNativeTarget "Metric ConvertersUITests" */;
+			buildPhases = (
+				9BBF3D561D52B58D00C631E6 /* Sources */,
+				9BBF3D571D52B58D00C631E6 /* Frameworks */,
+				9BBF3D581D52B58D00C631E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BBF3D5C1D52B58D00C631E6 /* PBXTargetDependency */,
+			);
+			name = "Metric ConvertersUITests";
+			productName = "Metric ConvertersUITests";
+			productReference = 9BBF3D5A1D52B58D00C631E6 /* Metric ConvertersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BBF3D301D52B58D00C631E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "James Brown";
+				TargetAttributes = {
+					9BBF3D371D52B58D00C631E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9BBF3D4E1D52B58D00C631E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9BBF3D371D52B58D00C631E6;
+					};
+					9BBF3D591D52B58D00C631E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9BBF3D371D52B58D00C631E6;
+					};
+				};
+			};
+			buildConfigurationList = 9BBF3D331D52B58D00C631E6 /* Build configuration list for PBXProject "Metric Converters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BBF3D2F1D52B58D00C631E6;
+			productRefGroup = 9BBF3D391D52B58D00C631E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BBF3D371D52B58D00C631E6 /* Metric Converters */,
+				9BBF3D4E1D52B58D00C631E6 /* Metric ConvertersTests */,
+				9BBF3D591D52B58D00C631E6 /* Metric ConvertersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BBF3D361D52B58D00C631E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF3D491D52B58D00C631E6 /* LaunchScreen.storyboard in Resources */,
+				9BBF3D461D52B58D00C631E6 /* Assets.xcassets in Resources */,
+				9BBF3D411D52B58D00C631E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF3D4D1D52B58D00C631E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF3D581D52B58D00C631E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BBF3D341D52B58D00C631E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF3D3E1D52B58D00C631E6 /* ViewController.swift in Sources */,
+				9BBF3D441D52B58D00C631E6 /* Metric_Converters.xcdatamodeld in Sources */,
+				9BBF3D3C1D52B58D00C631E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF3D4B1D52B58D00C631E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF3D541D52B58D00C631E6 /* Metric_ConvertersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF3D561D52B58D00C631E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF3D5F1D52B58D00C631E6 /* Metric_ConvertersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BBF3D511D52B58D00C631E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BBF3D371D52B58D00C631E6 /* Metric Converters */;
+			targetProxy = 9BBF3D501D52B58D00C631E6 /* PBXContainerItemProxy */;
+		};
+		9BBF3D5C1D52B58D00C631E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BBF3D371D52B58D00C631E6 /* Metric Converters */;
+			targetProxy = 9BBF3D5B1D52B58D00C631E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BBF3D3F1D52B58D00C631E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BBF3D401D52B58D00C631E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BBF3D471D52B58D00C631E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BBF3D481D52B58D00C631E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BBF3D611D52B58D00C631E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BBF3D621D52B58D00C631E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BBF3D641D52B58D00C631E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Metric Converters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Metric-Converters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BBF3D651D52B58D00C631E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Metric Converters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Metric-Converters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9BBF3D671D52B58D00C631E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Metric ConvertersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Metric-ConvertersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metric Converters.app/Metric Converters";
+			};
+			name = Debug;
+		};
+		9BBF3D681D52B58D00C631E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Metric ConvertersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Metric-ConvertersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metric Converters.app/Metric Converters";
+			};
+			name = Release;
+		};
+		9BBF3D6A1D52B58D00C631E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Metric ConvertersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Metric-ConvertersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Metric Converters";
+			};
+			name = Debug;
+		};
+		9BBF3D6B1D52B58D00C631E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Metric ConvertersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Metric-ConvertersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Metric Converters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BBF3D331D52B58D00C631E6 /* Build configuration list for PBXProject "Metric Converters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBF3D611D52B58D00C631E6 /* Debug */,
+				9BBF3D621D52B58D00C631E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BBF3D631D52B58D00C631E6 /* Build configuration list for PBXNativeTarget "Metric Converters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBF3D641D52B58D00C631E6 /* Debug */,
+				9BBF3D651D52B58D00C631E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9BBF3D661D52B58D00C631E6 /* Build configuration list for PBXNativeTarget "Metric ConvertersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBF3D671D52B58D00C631E6 /* Debug */,
+				9BBF3D681D52B58D00C631E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9BBF3D691D52B58D00C631E6 /* Build configuration list for PBXNativeTarget "Metric ConvertersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBF3D6A1D52B58D00C631E6 /* Debug */,
+				9BBF3D6B1D52B58D00C631E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BBF3D421D52B58D00C631E6 /* Metric_Converters.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BBF3D431D52B58D00C631E6 /* Metric_Converters.xcdatamodel */,
+			);
+			currentVersion = 9BBF3D431D52B58D00C631E6 /* Metric_Converters.xcdatamodel */;
+			path = Metric_Converters.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9BBF3D301D52B58D00C631E6 /* Project object */;
+}
