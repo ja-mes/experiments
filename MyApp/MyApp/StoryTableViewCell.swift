@@ -17,4 +17,16 @@ class StoryTableViewCell: UITableViewCell {
     @IBOutlet var authorLabel: UILabel!
     @IBOutlet var upvoteButton: SpringButton!
     @IBOutlet var commentButton: SpringButton!
+    
+    @IBAction func upvoteButtonDidTouch(sender: AnyObject) {
+        upvoteButton.animation = "pop"
+        upvoteButton.force = 3
+        upvoteButton.animate()
+    }
+    
+    @IBAction func commentButtonDidTouch(sender: AnyObject) {
+        commentButton.animation = "pop"
+        commentButton.force = 3
+        commentButton.animate()
+    }
 }

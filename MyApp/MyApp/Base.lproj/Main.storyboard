@@ -203,6 +203,9 @@
                                                 <color key="titleColor" red="0.51764705882352946" green="0.58431372549019611" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="upvoteButtonDidTouch:" destination="rMu-M7-prf" eventType="touchUpInside" id="cof-Es-jcq"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr2-xW-1hu" customClass="SpringButton" customModule="MyApp" customModuleProvider="target">
                                             <rect key="frame" x="103" y="54" width="70" height="33"/>
@@ -217,6 +220,9 @@
                                                 <color key="titleColor" red="0.51764705879999995" green="0.58431372550000005" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="commentButtonDidTouch:" destination="rMu-M7-prf" eventType="touchUpInside" id="WQQ-8K-lJY"/>
+                                            </connections>
                                         </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-mB-5wL">
                                             <rect key="frame" x="10" y="8" width="20" height="20"/>
