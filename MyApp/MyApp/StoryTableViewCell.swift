@@ -10,6 +10,11 @@ import UIKit
 
 class StoryTableViewCell: UITableViewCell {
 
-  
-
+    @IBOutlet var badgeImageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var avatarImageView: UIImageView!
+    @IBOutlet var authorLabel: UILabel!
+    @IBOutlet var upvoteButton: SpringButton!
+    @IBOutlet var commentButton: SpringButton!
 }

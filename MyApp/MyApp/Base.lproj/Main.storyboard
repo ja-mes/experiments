@@ -247,6 +247,15 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="authorLabel" destination="h1x-Hm-EYn" id="h5O-f6-VLB"/>
+                                    <outlet property="avatarImageView" destination="9Fd-vj-IVu" id="pjJ-Vs-dWb"/>
+                                    <outlet property="badgeImageView" destination="2C5-mB-5wL" id="N1r-ny-bxj"/>
+                                    <outlet property="commentButton" destination="qr2-xW-1hu" id="eFl-RV-vSf"/>
+                                    <outlet property="timeLabel" destination="NdX-Bt-22X" id="yVh-8K-A10"/>
+                                    <outlet property="titleLabel" destination="p1y-u7-sZn" id="NlQ-33-QPn"/>
+                                    <outlet property="upvoteButton" destination="esp-HZ-7MG" id="Thh-lG-YEo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
