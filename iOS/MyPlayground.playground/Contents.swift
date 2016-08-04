@@ -2,8 +2,6 @@
 
 import UIKit
 
-var items: [[String: String]] = [
-    ["foo": "bar"],
-    ["joe": "blah"],
-]
+let mystring:String? = "hello world"
 
+mystring!.hasPrefix("wo")
