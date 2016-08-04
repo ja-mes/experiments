@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="converterCell" id="Dpo-Kc-xdJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="converterCell" id="Dpo-Kc-xdJ" customClass="ConvertersCell" customModule="Metric_Converters" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dpo-Kc-xdJ" id="n0A-kj-xfS">
@@ -71,6 +71,9 @@
                                         <constraint firstItem="fUj-1f-utJ" firstAttribute="leading" secondItem="n0A-kj-xfS" secondAttribute="leadingMargin" constant="12" id="mKN-SJ-wnk"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="fUj-1f-utJ" id="W1p-5A-JQ5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

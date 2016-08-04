@@ -10,11 +10,11 @@ import UIKit
 
 class ConvertersTableViewController: UITableViewController {
     
-    var converters: [String: String] = [
+    var converters: [[String: String]] = [[
         "first": "Feet",
         "second": "Meters",
         "calc": "* 3.2808"
-    ]
+    ]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,14 +40,15 @@ class ConvertersTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return converters.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("converterCell", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("converterCell", forIndexPath: indexPath) as! ConvertersCell
+        
+        let data = converters[indexPath.row]
+        cell.descriptionLabel.text = "\(data["first"]!) and \(data["second"]!)"
 
         return cell
     }
