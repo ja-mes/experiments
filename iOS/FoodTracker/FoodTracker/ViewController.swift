@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // TODO: Properties
+    // MARK: Properties
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var mealNameLabel: UILabel!
+    
     
     //foobar
     override func viewDidLoad() {
@@ -23,6 +26,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: Actions
+    @IBAction func setDefaultLabelText(sender: AnyObject) {
+        mealNameLabel.text = "Default Text"
+    }
+    
 
 }
 
