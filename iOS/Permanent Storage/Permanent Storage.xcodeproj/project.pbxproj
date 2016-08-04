@@ -101,6 +101,7 @@
 			children = (
 				9BDD37471D53F40000B30BD2 /* AppDelegate.swift */,
 				9BDD37491D53F40000B30BD2 /* ViewController.swift */,
+				9BDD37781D53F74F00B30BD2 /* New Group */,
 				9BDD374B1D53F40000B30BD2 /* Main.storyboard */,
 				9BDD37511D53F40000B30BD2 /* Assets.xcassets */,
 				9BDD37531D53F40000B30BD2 /* LaunchScreen.storyboard */,
@@ -126,6 +127,13 @@
 				9BDD376C1D53F40000B30BD2 /* Info.plist */,
 			);
 			path = "Permanent StorageUITests";
+			sourceTree = "<group>";
+		};
+		9BDD37781D53F74F00B30BD2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
