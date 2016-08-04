@@ -9,6 +9,12 @@
 import UIKit
 
 class ConvertersTableViewController: UITableViewController {
+    
+    var converters: [String: String] = [
+        "first": "Feet",
+        "second": "Meters",
+        "calc": "* 3.2808"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,23 +35,22 @@ class ConvertersTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("converterCell", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
