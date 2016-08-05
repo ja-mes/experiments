@@ -9,9 +9,15 @@
 import UIKit
 
 class TodosTableViewController: UITableViewController {
-
+    var todos = NSUserDefaults.standardUserDefaults().objectForKey("todo")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if todos == nil {
+            NSUserDefaults.standardUserDefaults().setObject([], forKey: "todo")
+            todos = []
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,14 +40,16 @@ class TodosTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return todos!.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TodoTableViewCell
         
-        cell.descriptionLabel.text = "blah11"
+        //cell.descriptionLabel.text = todos![indexPath.row]
+        
+        cell.descriptionLabel.text = String(todos![indexPath.row])
         
         
         return cell

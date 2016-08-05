@@ -16,3 +16,6 @@ var standardArr = Array(arr)
 standardArr.append(10)
 
 let nsarray = NSArray(array: standardArr).arrayByAddingObject(54)
+
+
+let a = NSUserDefaults.standardUserDefaults().setObject("foo", forKey: "test")
