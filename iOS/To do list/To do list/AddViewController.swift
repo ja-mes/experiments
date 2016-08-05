@@ -9,6 +9,9 @@
 import UIKit
 
 class AddViewController: UIViewController {
+    
+    // MARK: Outlets
+    @IBOutlet weak var item: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,24 @@ class AddViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // MARK: Actions
+    @IBAction func add(sender: AnyObject) {
+        let todos = NSUserDefaults.standardUserDefaults().objectForKey("todo")
+        
+        if let todoArray = todos as? NSArray {
+            let items = todoArray.arrayByAddingObject(item.text!)
+            
+            NSUserDefaults.standardUserDefaults().setObject(items, forKey: "todo")
+        }
+        else {
+            NSUserDefaults.standardUserDefaults().setObject([item.text!], forKey: "todo")
+        }
+        
+        print(NSUserDefaults.standardUserDefaults().objectForKey("todo"))
+        
+        //NSUserDefaults.standardUserDefaults().setObject(item.text, forKey: "todo")
+    }
 
     /*
     // MARK: - Navigation

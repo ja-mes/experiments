@@ -80,6 +80,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6l-Ld-CXX">
                                 <rect key="frame" x="20" y="153" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Bbx-8d-gZU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -95,6 +98,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Todo" id="wST-Tj-ZKD"/>
+                    <connections>
+                        <outlet property="item" destination="E6Y-gn-Dx2" id="hQQ-44-dHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +109,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -116,6 +121,7 @@
                         <segue destination="AH3-6b-nIq" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
