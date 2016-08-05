@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="z53-ye-ohw" customClass="TodoTableViewCell" customModule="To_do_list" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z53-ye-ohw" id="dWM-rN-6Gm">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -45,16 +45,16 @@
                             <outlet property="delegate" destination="g2H-a2-XfI" id="PhZ-qu-zJe"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="My Todos" image="first" id="m5N-of-ZBM"/>
+                    <navigationItem key="navigationItem" title="My Todos" id="evk-dd-B2Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7n-nA-vlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-352"/>
+            <point key="canvasLocation" x="1560" y="-352"/>
         </scene>
-        <!--Add Item-->
+        <!--Add Todo-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="To_do_list" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="AddViewController" customModule="To_do_list" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter item details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6Y-gn-Dx2">
-                                <rect key="frame" x="20" y="71" width="560" height="30"/>
+                                <rect key="frame" x="20" y="115" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2QX-sT-ucL"/>
                                 </constraints>
@@ -72,13 +72,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdH-kR-nGv">
-                                <rect key="frame" x="20" y="42" width="560" height="21"/>
+                                <rect key="frame" x="20" y="86" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6l-Ld-CXX">
-                                <rect key="frame" x="20" y="109" width="30" height="30"/>
+                                <rect key="frame" x="20" y="153" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                             </button>
                         </subviews>
@@ -94,15 +94,16 @@
                             <constraint firstItem="EdH-kR-nGv" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="22" id="qmi-8t-M8b"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Item" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" title="Add Todo" id="wST-Tj-ZKD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1562" y="360"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -111,13 +112,50 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="g2H-a2-XfI" kind="relationship" relationship="viewControllers" id="4DW-MS-1EK"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="GNH-d7-EE0" kind="relationship" relationship="viewControllers" id="4DW-MS-1EK"/>
+                        <segue destination="AH3-6b-nIq" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--My Todos-->
+        <scene sceneID="8hT-4Z-nex">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GNH-d7-EE0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Todos" image="first" id="m5N-of-ZBM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NWv-FB-D5z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g2H-a2-XfI" kind="relationship" relationship="rootViewController" id="3gr-Je-tdX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UK-xC-tqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-352"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="xnp-Jm-k3Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AH3-6b-nIq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add Item" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mZ0-tc-6bR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="k6A-bY-miL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9x-ap-ZbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
         </scene>
     </scenes>
     <resources>
