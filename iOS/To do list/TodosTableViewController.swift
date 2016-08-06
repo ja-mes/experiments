@@ -9,21 +9,23 @@
 import UIKit
 
 class TodosTableViewController: UITableViewController {
-    var todos = NSUserDefaults.standardUserDefaults().objectForKey("todo")
-    
+    var todos = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if todos == nil {
-            NSUserDefaults.standardUserDefaults().setObject([], forKey: "todo")
-            todos = []
-        }
-
+        todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! NSArray
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! NSArray
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,16 +42,14 @@ class TodosTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return todos!.count
+        return todos.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TodoTableViewCell
         
-        //cell.descriptionLabel.text = todos![indexPath.row]
-        
-        cell.descriptionLabel.text = String(todos![indexPath.row])
+        cell.descriptionLabel.text = String(todos[indexPath.row])
         
         
         return cell
@@ -100,5 +100,18 @@ class TodosTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Keyboard
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+
 
 }

@@ -99,6 +99,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add Todo" id="wST-Tj-ZKD"/>
                     <connections>
+                        <outlet property="addButton" destination="z6l-Ld-CXX" id="ifu-rR-Vj5"/>
                         <outlet property="item" destination="E6Y-gn-Dx2" id="hQQ-44-dHm"/>
                     </connections>
                 </viewController>

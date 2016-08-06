@@ -8,15 +8,16 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Outlets
     @IBOutlet weak var item: UITextField!
+    @IBOutlet weak var addButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        item.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,20 +28,9 @@ class AddViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func add(sender: AnyObject) {
-        let todos = NSUserDefaults.standardUserDefaults().objectForKey("todo")
-        
-        if let todoArray = todos as? NSArray {
-            let items = todoArray.arrayByAddingObject(item.text!)
-            
-            NSUserDefaults.standardUserDefaults().setObject(items, forKey: "todo")
-        }
-        else {
-            NSUserDefaults.standardUserDefaults().setObject([item.text!], forKey: "todo")
-        }
-        
-        print(NSUserDefaults.standardUserDefaults().objectForKey("todo"))
-        
-        //NSUserDefaults.standardUserDefaults().setObject(item.text, forKey: "todo")
+        let todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! NSArray
+        let items = todos.arrayByAddingObject(item.text!)
+        NSUserDefaults.standardUserDefaults().setObject(items, forKey: "todo")
     }
 
     /*
@@ -52,5 +42,18 @@ class AddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Keyboard
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+
 
 }
