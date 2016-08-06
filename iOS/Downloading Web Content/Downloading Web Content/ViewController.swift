@@ -9,10 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = NSURL(string: "http://stackoverflow.com")!
+        
+        webView.loadRequest(NSURLRequest(URL: url))
+        
+//        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
+//            // will happen when task completes
+//            
+//            if let urlContent = data {
+//                let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
+//                
+//                dispatch_async(dispatch_get_main_queue(), { 
+//                  self.webView.loadHTMLString(String(webContent!), baseURL: nil)
+//                })
+//                
+//            } else {
+//                // show error message
+//                
+//            }
+//        }
+//        
+//        task.resume()
+        
     }
 
     override func didReceiveMemoryWarning() {
