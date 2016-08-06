@@ -9,12 +9,12 @@
 import UIKit
 
 class TodosTableViewController: UITableViewController {
-    var todos = []
+    var todos = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! NSArray
+        todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! Array
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,7 +24,7 @@ class TodosTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! NSArray
+        todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! Array
         self.tableView.reloadData()
     }
 
@@ -53,6 +53,15 @@ class TodosTableViewController: UITableViewController {
         
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            todos.removeAtIndex(indexPath.row)
+            
+            NSUserDefaults.standardUserDefaults().setObject(todos, forKey: "todo")
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
     }
 
 

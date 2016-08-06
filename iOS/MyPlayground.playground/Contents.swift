@@ -2,20 +2,8 @@
 
 import UIKit
 
-let mystring:String? = "hello world"
+var thearr = [1, 2, 3]
 
-mystring!.hasPrefix("wo")
+thearr.removeAtIndex(0)
 
-Int(Float(5.0)) * Int(3)
-
-var arr: NSArray = [1, 2, 3, 4]
-
-var arr2 = [1, 2, 3, 4]
-
-var standardArr = Array(arr)
-standardArr.append(10)
-
-let nsarray = NSArray(array: standardArr).arrayByAddingObject(54)
-
-
-let a = NSUserDefaults.standardUserDefaults().setObject("foo", forKey: "test")
+thearr
