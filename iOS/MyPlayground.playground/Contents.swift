@@ -2,8 +2,28 @@
 
 import UIKit
 
-var thearr = [1, 2, 3]
+var str = "Hello"
 
-thearr.removeAtIndex(0)
+var newString = str + " James"
 
-thearr
+for character in newString.characters {
+    print(character)
+}
+
+var newTypeString = NSString(string: newString)
+
+newTypeString.substringToIndex(5)
+newTypeString.substringFromIndex(6)
+
+newTypeString.substringWithRange(NSRange(location: 3, length: 5))
+
+newTypeString.containsString(" James")
+
+if newTypeString.containsString("hello") {
+    // yes
+}
+
+newTypeString.componentsSeparatedByString(" ")
+
+newTypeString.uppercaseString
+newTypeString.lowercaseString
