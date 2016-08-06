@@ -31,6 +31,9 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         let todos = NSUserDefaults.standardUserDefaults().objectForKey("todo") as! NSArray
         let items = todos.arrayByAddingObject(item.text!)
         NSUserDefaults.standardUserDefaults().setObject(items, forKey: "todo")
+        
+        item.text = ""
+        item.endEditing(true)
     }
 
     /*
