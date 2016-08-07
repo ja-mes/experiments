@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B11B5681D56C2FF008C6519"
+               BlueprintIdentifier = "9BFD98C81D57A509004341C3"
                BuildableName = "Working with core data.app"
                BlueprintName = "Working with core data"
                ReferencedContainer = "container:Working with core data.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B11B57F1D56C2FF008C6519"
+               BlueprintIdentifier = "9BFD98DF1D57A509004341C3"
                BuildableName = "Working with core dataTests.xctest"
                BlueprintName = "Working with core dataTests"
                ReferencedContainer = "container:Working with core data.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B11B58A1D56C2FF008C6519"
+               BlueprintIdentifier = "9BFD98EA1D57A509004341C3"
                BuildableName = "Working with core dataUITests.xctest"
                BlueprintName = "Working with core dataUITests"
                ReferencedContainer = "container:Working with core data.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B11B5681D56C2FF008C6519"
+            BlueprintIdentifier = "9BFD98C81D57A509004341C3"
             BuildableName = "Working with core data.app"
             BlueprintName = "Working with core data"
             ReferencedContainer = "container:Working with core data.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B11B5681D56C2FF008C6519"
+            BlueprintIdentifier = "9BFD98C81D57A509004341C3"
             BuildableName = "Working with core data.app"
             BlueprintName = "Working with core data"
             ReferencedContainer = "container:Working with core data.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B11B5681D56C2FF008C6519"
+            BlueprintIdentifier = "9BFD98C81D57A509004341C3"
             BuildableName = "Working with core data.app"
             BlueprintName = "Working with core data"
             ReferencedContainer = "container:Working with core data.xcodeproj">

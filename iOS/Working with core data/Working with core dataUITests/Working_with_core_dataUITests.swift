@@ -2,7 +2,7 @@
 //  Working_with_core_dataUITests.swift
 //  Working with core dataUITests
 //
-//  Created by James Brown on 8/6/16.
+//  Created by James Brown on 8/7/16.
 //  Copyright © 2016 James Brown. All rights reserved.
 //
 
