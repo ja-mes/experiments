@@ -10,48 +10,45 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var city: UITextField!
+    @IBOutlet weak var forecastLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func lookupWeather(sender: AnyObject) {
-        //let url = NSURL(fileURLWithPath: "http://www.weather-forcast.com/locations/" + city.text! + "/forcasts/latest")
-//        let url = NSURL(fileURLWithPath: "https://www.google.com")
-//        
-//        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
-//            
-//            if let urlContent = data {
-//                let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
-//                
-//                dispatch_async(dispatch_get_main_queue(), {
-//                    print(webContent)
-//                })
-//            }
-//        }
-//        
-//        task.resume()
-//        
+        var wasSuccessful = false
         
-        let url = NSURL(string: "http://www.weather-forcast.com/locations/Paris/forcasts/latest")!
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
-            // will happen when task completes
+        if let url = NSURL(string: "http://www.weather-forecast.com/locations/" + city.text!.stringByReplacingOccurrencesOfString(" ", withString: "-") + "/forecasts/latest") {
             
-            if let urlContent = data {
-                let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
-                
-                print(webContent)
-                
-            } else {
-                // show error message
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
+                if let urlContent = data {
+                    
+                    let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
+                    
+                    let websiteArray = webContent?.componentsSeparatedByString("3 Day Weather Forecast Summary:</b><span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">")
+                    
+                    if websiteArray?.count > 1 {
+                        let weatherText = websiteArray![1].componentsSeparatedByString("</span></span></span>")[0].stringByReplacingOccurrencesOfString("&deg;", withString: "°")
+                        
+                        wasSuccessful = true
+                        
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.forecastLabel.text = weatherText
+                        })
+                    }
+                }
                 
             }
+            
+            if wasSuccessful == false {
+                self.forecastLabel.text = "Could not find weather for that city"
+            }
+            
+            task.resume()
+            
         }
         
-        task.resume()
-        
-
     }
 
 }

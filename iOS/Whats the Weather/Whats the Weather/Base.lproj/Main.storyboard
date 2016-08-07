@@ -35,36 +35,51 @@
                                     <action selector="lookupWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RaE-j1-vBA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0m-ku-OiZ">
-                                <rect key="frame" x="20" y="224" width="0.0" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nU-tc-nH3">
+                                <rect key="frame" x="20" y="224" width="560" height="101"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="5zV-MY-FsC"/>
+                                    <constraint firstAttribute="height" constant="101" id="l1Q-p2-fWu"/>
+                                    <constraint firstAttribute="width" constant="560" id="sH5-er-tmw"/>
+                                    <constraint firstAttribute="height" constant="101" id="v9f-KL-imW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="5zV-MY-FsC"/>
+                                        <exclude reference="l1Q-p2-fWu"/>
+                                        <exclude reference="sH5-er-tmw"/>
                                     </mask>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="d0m-ku-OiZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="65S-RV-ZOx"/>
+                            <constraint firstItem="0nU-tc-nH3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0BD-6i-K8I"/>
                             <constraint firstItem="EdD-hb-ZyW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="9cC-ZW-cQr"/>
+                            <constraint firstItem="0nU-tc-nH3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A9x-XO-Dzi"/>
                             <constraint firstItem="EdD-hb-ZyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Etl-51-sgE"/>
+                            <constraint firstItem="0nU-tc-nH3" firstAttribute="top" secondItem="K7u-87-eDs" secondAttribute="bottom" constant="40" id="Eyb-Ov-OKY"/>
+                            <constraint firstItem="0nU-tc-nH3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="H5q-0k-u3K"/>
                             <constraint firstItem="Nfm-cJ-cqw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Loc-AN-Lgu"/>
                             <constraint firstItem="K7u-87-eDs" firstAttribute="top" secondItem="Nfm-cJ-cqw" secondAttribute="bottom" constant="8" id="Omx-Tb-Cv0"/>
+                            <constraint firstItem="0nU-tc-nH3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S0u-1V-I3K"/>
                             <constraint firstItem="Nfm-cJ-cqw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aYA-II-A1s"/>
-                            <constraint firstItem="d0m-ku-OiZ" firstAttribute="top" secondItem="K7u-87-eDs" secondAttribute="bottom" constant="40" id="fZY-bL-IXp"/>
                             <constraint firstItem="Nfm-cJ-cqw" firstAttribute="top" secondItem="EdD-hb-ZyW" secondAttribute="bottom" constant="25" id="iy8-h8-6QI"/>
+                            <constraint firstItem="0nU-tc-nH3" firstAttribute="top" secondItem="K7u-87-eDs" secondAttribute="bottom" constant="40" id="l4h-jd-ztX"/>
                             <constraint firstItem="K7u-87-eDs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lNP-wE-htI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eyb-Ov-OKY"/>
+                                <exclude reference="H5q-0k-u3K"/>
+                                <exclude reference="S0u-1V-I3K"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="city" destination="Nfm-cJ-cqw" id="KNW-aa-MxM"/>
+                        <outlet property="forecastLabel" destination="0nU-tc-nH3" id="ODr-fl-LEa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
