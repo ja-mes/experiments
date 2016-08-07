@@ -15,6 +15,7 @@
 		9B11B5B71D56C44D008C6519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11B5B51D56C44D008C6519 /* LaunchScreen.storyboard */; };
 		9B11B5C21D56C44D008C6519 /* Advanced_SequesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11B5C11D56C44D008C6519 /* Advanced_SequesTests.swift */; };
 		9B11B5CD1D56C44D008C6519 /* Advanced_SequesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11B5CC1D56C44D008C6519 /* Advanced_SequesUITests.swift */; };
+		9B11B5DB1D56C58C008C6519 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11B5DA1D56C58C008C6519 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9B11B5C81D56C44D008C6519 /* Advanced SequesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advanced SequesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B11B5CC1D56C44D008C6519 /* Advanced_SequesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_SequesUITests.swift; sourceTree = "<group>"; };
 		9B11B5CE1D56C44D008C6519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B11B5DA1D56C58C008C6519 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9B11B5A91D56C44D008C6519 /* AppDelegate.swift */,
 				9B11B5AB1D56C44D008C6519 /* ViewController.swift */,
+				9B11B5DA1D56C58C008C6519 /* TableViewController.swift */,
 				9B11B5AD1D56C44D008C6519 /* Main.storyboard */,
 				9B11B5B31D56C44D008C6519 /* Assets.xcassets */,
 				9B11B5B51D56C44D008C6519 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				9B11B5AC1D56C44D008C6519 /* ViewController.swift in Sources */,
 				9B11B5B21D56C44D008C6519 /* Advanced_Seques.xcdatamodeld in Sources */,
 				9B11B5AA1D56C44D008C6519 /* AppDelegate.swift in Sources */,
+				9B11B5DB1D56C58C008C6519 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
