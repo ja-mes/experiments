@@ -19,7 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-dz-LiB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-dz-LiB">
+                                <gestureRecognizers/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="vTd-MX-qTu">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="98" id="Dh7-8m-yHd"/>
@@ -31,17 +33,21 @@
                                     <constraint firstAttribute="height" constant="202" id="Li9-fs-8RE"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCe-Dm-4ZY"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCe-Dm-4ZY">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Tlk-0y-EuM"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hCe-Dm-4ZY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3QK-tN-pBf"/>
                             <constraint firstAttribute="trailing" secondItem="GgW-DP-5Ys" secondAttribute="trailing" id="3zG-dw-mbf"/>
+                            <constraint firstItem="hCe-Dm-4ZY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PaN-yG-k8Z"/>
                             <constraint firstItem="D7e-dz-LiB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SCn-Bl-sbm"/>
                             <constraint firstAttribute="trailing" secondItem="D7e-dz-LiB" secondAttribute="trailing" id="XM9-fG-eH4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hCe-Dm-4ZY" secondAttribute="bottom" id="aa4-cO-Byl"/>
-                            <constraint firstItem="hCe-Dm-4ZY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eIE-xY-Jpg"/>
-                            <constraint firstAttribute="trailing" secondItem="hCe-Dm-4ZY" secondAttribute="trailing" id="hXP-dd-Ek0"/>
                             <constraint firstItem="D7e-dz-LiB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hra-oW-VX8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D7e-dz-LiB" secondAttribute="bottom" id="lby-Im-Kpg"/>
                             <constraint firstItem="vTd-MX-qTu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="nXc-UT-DDw"/>
@@ -50,6 +56,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GgW-DP-5Ys" secondAttribute="bottom" id="yJ4-8b-ua4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="hCe-Dm-4ZY" id="NDX-x3-b5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
