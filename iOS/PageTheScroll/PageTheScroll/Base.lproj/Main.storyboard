@@ -29,10 +29,21 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="GgW-DP-5Ys">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="202" id="Li9-fs-8RE"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6I6-33-IIn">
+                                <frame key="frameInset" minX="-1" width="376" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xfp-uY-DaU" appends="YES" id="CAG-tD-9vj"/>
+                                    <outletCollection property="gestureRecognizers" destination="Wvv-J0-zbT" appends="YES" id="NIx-pe-G8Y"/>
+                                </connections>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCe-Dm-4ZY">
                                 <gestureRecognizers/>
                                 <constraints>
@@ -61,6 +72,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Xfp-uY-DaU">
+                    <connections>
+                        <action selector="viewSwipedRight:" destination="BYZ-38-t0r" id="KEG-ts-mMy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Wvv-J0-zbT">
+                    <connections>
+                        <action selector="viewSwipedRight:" destination="BYZ-38-t0r" id="X7T-wZ-rEh"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>

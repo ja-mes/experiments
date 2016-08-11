@@ -18,17 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let swipeRec = UISwipeGestureRecognizer(target: self, action: #selector(swipedView))
-        view.isUserInteractionEnabled = true
-        swipeRec.direction = UISwipeGestureRecognizerDirection.right
-        view.addGestureRecognizer(swipeRec)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("Scrollview width: \(scrollView.frame.size.width)")
-        
-        
-        
         
         var contentWidth: CGFloat = 0.0
         let scrollWidth = scrollView.frame.size.width
@@ -53,10 +45,20 @@ class ViewController: UIViewController {
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
     }
     
-    func swipedView(){
-        print("swiped")
+
+    @IBAction func viewSwipedRight(_ sender: UISwipeGestureRecognizer) {
+        var newX: CGFloat = 0.0
+        
+        if sender.direction == UISwipeGestureRecognizerDirection.left {
+            print("went left")
+            newX = scrollView.frame.size.width + scrollView.contentOffset.x
+        } else if sender.direction == UISwipeGestureRecognizerDirection.right {
+            print("went right")
+            newX =  scrollView.contentOffset.x - scrollView.frame.size.width
+        }
+        scrollView.setContentOffset(CGPoint(x: newX, y: 0), animated: true)
+        
     }
-
-
+    
 }
 
