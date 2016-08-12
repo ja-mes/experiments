@@ -20,29 +20,49 @@ class TipsyVC: UIViewController {
     @IBOutlet weak var totalAmountLabel: UILabel!
     
     // MARK: - @Properties
-    var tipsyVc = TipCalc(billAmount: 0.0, tipPercent: 0.0)
+    var tipCalc = TipCalc(billAmount: 0.0, tipPercent: 0.0)
     
     // MARK: - Initialize Views
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        tipPercentValue()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+
     
     // MARK: - @IBActions
     @IBAction func billAmountChanges(_ sender: AnyObject) {
-        
+        calcTip()
+    }
+    
+    @IBAction func tipPercentChanged(_ sender: AnyObject) {
+        tipPercentValue()
+        calcTip()
     }
     
     // MARK: - Functions
     func calcTip() {
-        tipsyVc.tipPercent = Double(tipPercentSlider.value)
-        tipsyVc.billAmount = ((billAmountTextField.text)! as NSString).doubleValue
+        tipCalc.tipPercent = Double(tipPercentSlider.value)
+        tipCalc.billAmount = ((billAmountTextField.text)! as NSString).doubleValue
         
-        tipsyVc.calculateTip()
+        tipCalc.calculateTip()
+        
+        updateUI()
     }
     
+    func updateUI() {
+        tipAmountLabel.text = String(format: "$%0.2f", tipCalc.tipAmount)
+        totalAmountLabel.text = String(format: "$%0.2f", tipCalc.totalAmount)
+    }
+    
+    func tipPercentValue() {
+        tipPercentLabel.text = "Tip \(Int(tipPercentSlider.value * 100))%"
+    }
     
     
 
