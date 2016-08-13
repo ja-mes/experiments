@@ -31,6 +31,8 @@ class TipsyVC: UIViewController {
         super.viewDidLoad()
         
         tipPercentValue()
+        
+        billAmountTextField.layer.cornerRadius = 5
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
