@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvc_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9q-wc-d0B">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8zU-je-moW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="ize-fI-pEK" customClass="RoundedImageView" customModule="mvc_test" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4MT-VD-r6V"/>
+                                    <constraint firstAttribute="width" constant="240" id="KeI-TQ-pXo"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-T4-1MS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9ka-B4-fNT"/>
+                                    <constraint firstAttribute="width" constant="240" id="QZ2-aY-C2R"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qS-8r-13u">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ztt-CP-oCj"/>
+                                    <constraint firstAttribute="width" constant="56" id="dPt-HC-g9y"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPv-hp-lOW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K7J-T4-1MS" firstAttribute="top" secondItem="h9q-wc-d0B" secondAttribute="bottom" constant="8" id="A3q-b5-3NF"/>
+                            <constraint firstItem="4qS-8r-13u" firstAttribute="top" secondItem="ize-fI-pEK" secondAttribute="bottom" constant="28" id="Ayo-6A-VYn"/>
+                            <constraint firstItem="ize-fI-pEK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9X-Q0-191"/>
+                            <constraint firstItem="h9q-wc-d0B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KT2-LV-2V2"/>
+                            <constraint firstItem="h9q-wc-d0B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="V95-MT-Shu"/>
+                            <constraint firstItem="K7J-T4-1MS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZsI-4v-0iB"/>
+                            <constraint firstItem="ize-fI-pEK" firstAttribute="top" secondItem="h9q-wc-d0B" secondAttribute="bottom" constant="53" id="fSy-bN-T7S"/>
+                            <constraint firstItem="ize-fI-pEK" firstAttribute="top" secondItem="K7J-T4-1MS" secondAttribute="bottom" constant="15" id="jCU-pw-No1"/>
+                            <constraint firstItem="h9q-wc-d0B" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kpi-XO-OKs"/>
+                            <constraint firstItem="4qS-8r-13u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tPT-UZ-gvg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="h9q-wc-d0B" id="LT4-yA-v3X"/>
+                        <outlet property="renameField" destination="K7J-T4-1MS" id="w1A-wR-z1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle" width="610" height="279"/>
+    </resources>
+</document>
