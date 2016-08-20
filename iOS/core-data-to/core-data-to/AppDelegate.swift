@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  exploring-core-data
+//  core-data-to
 //
-//  Created by James Brown on 8/17/16.
+//  Created by James Brown on 8/18/16.
 //  Copyright © 2016 James Brown. All rights reserved.
 //
 
@@ -16,18 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let rootNavigationController = mainStoryboard.instantiateViewController(withIdentifier: "StoryboardIDRootNavigationController") as! UINavigationController
-        
-        let viewController = rootNavigationController.topViewController as? ViewController
-        
-        if let viewController = viewController {
-            viewController.managedObjectContext = self.persistentContainer.viewContext
-        }
-        
-        window?.rootViewController = rootNavigationController
-        
+        // Override point for customization after application launch.
         return true
     }
 
@@ -64,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "exploring_core_data")
+        let container = NSPersistentContainer(name: "core_data_to")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

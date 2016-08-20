@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  exploring-core-data
+//  expr
 //
-//  Created by James Brown on 8/17/16.
+//  Created by James Brown on 8/18/16.
 //  Copyright © 2016 James Brown. All rights reserved.
 //
 
@@ -10,24 +10,21 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let rootNavigationController = mainStoryboard.instantiateViewController(withIdentifier: "StoryboardIDRootNavigationController") as! UINavigationController
-        
-        let viewController = rootNavigationController.topViewController as? ViewController
-        
-        if let viewController = viewController {
-            viewController.managedObjectContext = self.persistentContainer.viewContext
-        }
-        
-        window?.rootViewController = rootNavigationController
-        
+        // Override point for customization after application launch.
+        let splitViewController = self.window!.rootViewController as! UISplitViewController
+        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+        splitViewController.delegate = self
+
+        let masterNavigationController = splitViewController.viewControllers[0] as! UINavigationController
+        let controller = masterNavigationController.topViewController as! MasterViewController
+        controller.managedObjectContext = self.persistentContainer.viewContext
         return true
     }
 
@@ -55,6 +52,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    // MARK: - Split view
+
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
+        if topAsDetailController.detailItem == nil {
+            // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+            return true
+        }
+        return false
+    }
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
@@ -64,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "exploring_core_data")
+        let container = NSPersistentContainer(name: "expr")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
