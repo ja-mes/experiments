@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0800"
-   version = "1.3">
+   wasCreatedForAppExtension = "YES"
+   version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,10 +15,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B8B53AD1D6DDF2B00F0CD4D"
-               BuildableName = "Pokedex3.app"
-               BlueprintName = "Pokedex3"
-               ReferencedContainer = "container:Pokedex3.xcodeproj">
+               BlueprintIdentifier = "9B0558811D777DF6005FDEBC"
+               BuildableName = "StickerPackExtension.appex"
+               BlueprintName = "StickerPackExtension"
+               ReferencedContainer = "container:Sticker Pack.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9B05587D1D777DF6005FDEBC"
+               BuildableName = "Sticker Pack.app"
+               BlueprintName = "Sticker Pack"
+               ReferencedContainer = "container:Sticker Pack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +43,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B8B53C11D6DDF2B00F0CD4D"
-               BuildableName = "Pokedex3Tests.xctest"
-               BlueprintName = "Pokedex3Tests"
-               ReferencedContainer = "container:Pokedex3.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B8B53CC1D6DDF2B00F0CD4D"
-               BuildableName = "Pokedex3UITests.xctest"
-               BlueprintName = "Pokedex3UITests"
-               ReferencedContainer = "container:Pokedex3.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B8B53AD1D6DDF2B00F0CD4D"
-            BuildableName = "Pokedex3.app"
-            BlueprintName = "Pokedex3"
-            ReferencedContainer = "container:Pokedex3.xcodeproj">
+            BlueprintIdentifier = "9B0558811D777DF6005FDEBC"
+            BuildableName = "StickerPackExtension.appex"
+            BlueprintName = "StickerPackExtension"
+            ReferencedContainer = "container:Sticker Pack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,22 +58,23 @@
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B8B53AD1D6DDF2B00F0CD4D"
-            BuildableName = "Pokedex3.app"
-            BlueprintName = "Pokedex3"
-            ReferencedContainer = "container:Pokedex3.xcodeproj">
+            BlueprintIdentifier = "9B05587D1D777DF6005FDEBC"
+            BuildableName = "Sticker Pack.app"
+            BlueprintName = "Sticker Pack"
+            ReferencedContainer = "container:Sticker Pack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -89,15 +85,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B8B53AD1D6DDF2B00F0CD4D"
-            BuildableName = "Pokedex3.app"
-            BlueprintName = "Pokedex3"
-            ReferencedContainer = "container:Pokedex3.xcodeproj">
+            BlueprintIdentifier = "9B05587D1D777DF6005FDEBC"
+            BuildableName = "Sticker Pack.app"
+            BlueprintName = "Sticker Pack"
+            ReferencedContainer = "container:Sticker Pack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

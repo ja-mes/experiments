@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pokedex3.xcscheme</key>
+		<key>StickerPackExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9B8B53AD1D6DDF2B00F0CD4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9B8B53C11D6DDF2B00F0CD4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9B8B53CC1D6DDF2B00F0CD4D</key>
+		<key>9B0558811D777DF6005FDEBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
