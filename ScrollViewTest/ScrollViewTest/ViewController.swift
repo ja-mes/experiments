@@ -1,22 +1,18 @@
 //
 //  ViewController.swift
-//  PushNotifs
+//  ScrollViewTest
 //
-//  Created by James Brown on 8/31/16.
+//  Created by James Brown on 9/1/16.
 //  Copyright © 2016 James Brown. All rights reserved.
 //
 
 import UIKit
-import Firebase
-import FirebaseInstanceID
-import FirebaseMessaging
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        FIRMessaging.messaging().subscribe(toTopic: "/topics/news")
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
